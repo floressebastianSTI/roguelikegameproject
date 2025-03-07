@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: f3fc3b262030bd3438d129350d062f40
+  productGUID: 2485de07f3709334ca1c30532467f03d
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: test
+  productName: roguelikegameproject
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -630,14 +630,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: test
+  metroPackageName: roguelikegameproject
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: test
+  metroApplicationDescription: roguelikegameproject
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -706,12 +706,12 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 38b9d506-68af-4b8e-9532-acb94fe711c9
+  cloudProjectId: dfc1b669-461e-49a0-93a1-36f659a9ee1b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: test
+  projectName: roguelikegameproject
   organizationId: divinepurgation
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
