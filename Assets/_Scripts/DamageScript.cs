@@ -97,8 +97,7 @@ public class DamageScript : MonoBehaviour
             hp -= damage;
             isInvincible = true;
             flashEffect.Flash();
-
-            // Apply knockback if this is an enemy
+      
             Enemy enemy = GetComponent<Enemy>();
             if (enemy != null)
             {

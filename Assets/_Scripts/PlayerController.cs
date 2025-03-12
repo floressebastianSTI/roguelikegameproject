@@ -12,7 +12,19 @@ public class PlayerController : MonoBehaviour
     public Transform dashEffect;
 
     [SerializeField]
+    public Transform runEffect;
+
+    [SerializeField]
+    private float runEffectInterval = 0.2f;
+    private float runEffectTimer = 0f;
+
+    [SerializeField]
     private float dashDistance = 4.3f;
+
+    [SerializeField]
+    private float dashCooldown = 1.5f;
+
+    private bool canDash = true;
 
     public float walkSpeed = 0f;
     public float runSpeed = 0f;
@@ -96,11 +108,9 @@ public class PlayerController : MonoBehaviour
         }
         set
         {
-            running = value;
-            animator.SetBool("IsRunning", value);
-
+            running = value; 
+            animator.SetBool("IsRunning", running && IsMoving);
         }
-
     }
 
     //----------------------------------------------------// TESTING THEORY
@@ -124,23 +134,38 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-
         rb.linearVelocity = moveInput * CurrentMoveSpeed;
+
+        if (isAlive)
         {
-            if (isAlive)
+            Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, 0));
+            mousePosition.z = 0;
+
+            if (mouseScreenPosition != Vector2.zero)
             {
-                Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
-                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, 0));
-                mousePosition.z = 0;
-                if (mouseScreenPosition != Vector2.zero)
-                {
-                    bool isMouseRight = mousePosition.x > transform.position.x;
-                    spriteRenderer.flipX = !isMouseRight;
-                }
+                bool isMouseRight = mousePosition.x > transform.position.x;
+                spriteRenderer.flipX = !isMouseRight;
             }
-            else
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
+
+        if (IsRunning && IsMoving)
+        {
+            runEffectTimer += Time.fixedDeltaTime;
+
+            if (runEffectTimer >= runEffectInterval)
             {
-                spriteRenderer.flipX = false;
+                Transform runEffectTransform = Instantiate(runEffect, transform.position, Quaternion.identity);
+
+                // Flip the effect based on movement direction
+                bool isMovingLeft = lastMoveDir.x < 0;
+                runEffectTransform.localScale = new Vector3(isMovingLeft ? -1f : 1f, 1f, 1f);
+
+                runEffectTimer = 0f;
             }
         }
     }
@@ -215,26 +240,34 @@ public class PlayerController : MonoBehaviour
     // Vector2 moveInput;
     public void OnUniqueSkill(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && canDash) // Check if dash is available
         {
-            Vector3 beforeDashPosition = transform.position;
-            Transform dashEffectTransform = Instantiate(dashEffect, beforeDashPosition, Quaternion.identity);
-
-            float angle = UtilsClass.GetAngleFromVectorFloat(lastMoveDir);
-       
-            if (lastMoveDir.x < 0)
-            {
-                dashEffectTransform.eulerAngles = new Vector3(180, 0, -angle);
-            }
-            else
-            {
-                dashEffectTransform.eulerAngles = new Vector3(0, 0, angle);
-            }
-
-            float dashEffectWidth = 5f;
-            dashEffectTransform.localScale = new Vector3(dashDistance / dashEffectWidth, 1f, 1f);
-            transform.position += lastMoveDir * dashDistance;
+            StartCoroutine(Dash()); // Start the dash coroutine
         }
     }
+    private IEnumerator Dash()
+    {
+        canDash = false;
 
+        Vector3 beforeDashPosition = transform.position;
+        Transform dashEffectTransform = Instantiate(dashEffect, beforeDashPosition, Quaternion.identity);
+
+        float angle = UtilsClass.GetAngleFromVectorFloat(lastMoveDir);
+        if (lastMoveDir.x < 0)
+        {
+            dashEffectTransform.eulerAngles = new Vector3(180, 0, -angle);
+        }
+        else
+        {
+            dashEffectTransform.eulerAngles = new Vector3(0, 0, angle);
+        }
+
+        float dashEffectWidth = 5f;
+        dashEffectTransform.localScale = new Vector3(dashDistance / dashEffectWidth, 1f, 1f);
+        transform.position += lastMoveDir * dashDistance;
+
+        yield return new WaitForSeconds(dashCooldown);
+
+        canDash = true;
+    }
 }
