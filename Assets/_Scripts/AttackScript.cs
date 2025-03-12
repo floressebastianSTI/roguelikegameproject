@@ -16,7 +16,7 @@ public class AttackScript : MonoBehaviour
 
     public bool canAttack;
     public float timeBetweenAttacks;
-    public float resetAttackTime = 2f; // Time before reset
+    public float resetAttackTime = 2f;
     private float timer;
     private float lastAttackTime;
     private int attackIndex = 0;
@@ -54,7 +54,7 @@ public class AttackScript : MonoBehaviour
 
         if (Time.time - lastAttackTime > resetAttackTime)
         {
-            attackIndex = 0; // Reset attack cycle if inactive for too long
+            attackIndex = 0;
         }
 
         if (Mouse.current.leftButton.wasPressedThisFrame && canAttack)

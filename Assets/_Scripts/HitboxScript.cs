@@ -1,18 +1,19 @@
 using UnityEngine;
 
-public class HitDetector : MonoBehaviour
+public class HitboxScript : MonoBehaviour
 {
-    [SerializeField]
     public int attackDamage = 10;
+    public float knockbackForce = 5f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        DamageScript damage = collision.GetComponent<DamageScript>();
+        DamageScript damageable = collision.GetComponent<DamageScript>();
 
-        if(damage != null)
+        if (damageable != null)
         {
-            print("HIT!");
-            damage.Hit(attackDamage);
+            Vector2 attackerPosition = transform.position;
+            damageable.Hit(attackDamage, attackerPosition);
         }
     }
 }
+

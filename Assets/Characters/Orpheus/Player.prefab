@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 2993845234906436265}
   - component: {fileID: 2158474897197414651}
   - component: {fileID: 7741995712394628928}
+  - component: {fileID: 1700795689593034014}
   m_Layer: 3
   m_Name: OrpheusCharacter
   m_TagString: Player
@@ -69,7 +70,7 @@ Transform:
   m_GameObject: {fileID: 5180213880757792571}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.17, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -120,7 +121,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 9022332962975215192, guid: 3f40274181e5dd94dbd96e34150c55fb, type: 3}
+  m_Sprite: {fileID: 5518673893178867243, guid: 073a740a8d187784c88329a55b23abce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -167,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashEffect: {fileID: 784161876085773218, guid: c79b162b86573d045984b2e3d0590aa3, type: 3}
   dashDistance: 10
-  walkSpeed: 5
+  walkSpeed: 3
   runSpeed: 15
   pointerPosition: {fileID: -5630151704836100654, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   walking: 0
@@ -317,7 +318,27 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 54606c3d-47b0-44a3-9681-3deb19fffc43
     m_ActionName: 'Player/Sprint[/Keyboard/shift]'
-  m_NeverAutoSwitchControlSchemes: 0
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d9762894-56e4-4993-9537-fd0162e36f8b
+    m_ActionName: 'Player2/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b5645c79-df04-48c5-9369-9a1cb0e1c2e9
+    m_ActionName: 'Player2/Mouse Position[/Mouse/delta,/Pen/delta]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5149e2b7-4050-41af-afb8-8a3f64fc53ae
+    m_ActionName: 'Player2/Attack[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 02861dda-ba78-4a84-bfee-9a19a013f443
+    m_ActionName: 'Player2/Unique Skill[/Mouse/rightButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bc950f23-0170-415e-8d62-9c508860ae3a
+    m_ActionName: 'Player2/Sprint[/Keyboard/shift]'
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
@@ -334,8 +355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532e5a17c17c7c940b77606f76a24567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashEffect: {fileID: 0}
-  _health: 1000
+  flashEffect: {fileID: 1700795689593034014}
+  _health: 250
   _isAlive: 1
   _IsHit: 1
   isInvincible: 0
@@ -425,10 +446,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4bebbbc6b90654bbdacf3653d6451c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  afterimagePrefab: {fileID: 3473570387994699235, guid: 8ed25acffc430a743b857514690fe1dc, type: 3}
   spawnRate: 0.03
   afterimageLifetime: 0.2
   afterimageColor: {r: 1, g: 0, b: 0, a: 0.7882353}
+  pointerPosition: {fileID: -5630151704836100654, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
+  spriteRenderer: {fileID: 5521549631818196730}
+--- !u!114 &1700795689593034014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5180213880757792571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea70e91f90209154497cac249f332677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: acb50c71d2e7cde48bedaa6c7586932d, type: 2}
+  duration: 0.1
 --- !u!1 &7135420214159755999
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360c1f622cd311f4797961e91115d55b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  afterimagePrefab: {fileID: 3473570387994699235, guid: 8ed25acffc430a743b857514690fe1dc, type: 3}
 --- !u!1 &8395639411504949071
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,7 +588,7 @@ Transform:
   m_GameObject: {fileID: 8423942269398113224}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.28, y: -0.08, z: 0}
+  m_LocalPosition: {x: 1.28, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -624,6 +661,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 21cf08a929c45274f87915d080cd3df9, type: 2}
+    - target: {fileID: 1017566858331085089, guid: f53df6026212c554dae38ce2a6febf5d, type: 3}
+      propertyPath: attackDamage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3265548107119347153, guid: f53df6026212c554dae38ce2a6febf5d, type: 3}
       propertyPath: m_Name
       value: Slash2
@@ -730,6 +771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slash1
       objectReference: {fileID: 0}
+    - target: {fileID: 3720698675808601460, guid: 80226a6e7ecd39c4daa418d22883fb23, type: 3}
+      propertyPath: knockbackForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -791,6 +836,10 @@ PrefabInstance:
     - target: {fileID: 2872407127194148324, guid: a75164e147f2ecd4d9d4b2cdc6aa6a35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397578012153743345, guid: a75164e147f2ecd4d9d4b2cdc6aa6a35, type: 3}
+      propertyPath: knockbackForce
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -33,7 +33,8 @@ public class DamageScript : MonoBehaviour
     [SerializeField]
     public bool _isAlive = true;
     private bool IsAlive
-    { get
+    {
+        get
         {
             return _isAlive;
         }
@@ -87,21 +88,26 @@ public class DamageScript : MonoBehaviour
             }
             timeSinceDamaged += Time.deltaTime;
         }
-
-        if (Input.GetKeyDown(flashKey))
-        {
-            flashEffect.Flash();
-        }
     }
 
-    public void Hit(int damage)
+    public void Hit(int damage, Vector2 attackerPosition)
     {
         if (IsAlive && !isInvincible)
         {
             hp -= damage;
             isInvincible = true;
-            impulseSource.GenerateImpulse();
             flashEffect.Flash();
+
+            // Apply knockback if this is an enemy
+            Enemy enemy = GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                Vector2 knockbackDirection = (transform.position - (Vector3)attackerPosition).normalized;
+                float knockbackForce = 5f;
+                Vector2 knockback = knockbackDirection * knockbackForce;
+
+                enemy.OnHit(damage, knockback);
+            }
         }
     }
 }
