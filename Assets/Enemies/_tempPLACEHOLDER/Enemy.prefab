@@ -15,10 +15,9 @@ GameObject:
   - component: {fileID: 517361993861873527}
   - component: {fileID: 5229761331966603744}
   - component: {fileID: 3962552517714407899}
-  - component: {fileID: 7445197970194885268}
   - component: {fileID: 1511701884029716711}
   - component: {fileID: 3667042185263187390}
-  - component: {fileID: 7704973454187781828}
+  - component: {fileID: 1392163606252182483}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
@@ -66,7 +65,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &8861540141369240221
 SpriteRenderer:
@@ -193,8 +192,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.03413534, y: -0.073960304}
-  m_Radius: 1.1770225
+  m_Offset: {x: -0.03413534, y: 0.003653288}
+  m_Radius: 1.5096538
 --- !u!114 &3962552517714407899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,19 +212,6 @@ MonoBehaviour:
   _IsHit: 1
   isInvincible: 0
   invincibilityTime: 0.2
---- !u!114 &7445197970194885268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3029026763177166164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bf4b18a479205144b5132e33dcafd5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
 --- !u!114 &1511701884029716711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,7 +263,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 3.3133333, y: 2.9466667}
   m_Direction: 0
---- !u!114 &7704973454187781828
+--- !u!114 &1392163606252182483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,90 +272,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3029026763177166164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd438dd108a0f284aa931a2da434f1d3, type: 3}
+  m_Script: {fileID: 11500000, guid: f85ec65bb61c44642a663cf7337c124c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImpulseDefinition:
-    ImpulseChannel: 1
-    ImpulseShape: 0
-    CustomImpulseShape:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    ImpulseDuration: 0.2
-    ImpulseType: 3
-    DissipationRate: 0
-    RawSignal: {fileID: 11400000, guid: 2da298408ca693442bbe855fbe819e42, type: 2}
-    AmplitudeGain: 1
-    FrequencyGain: 1
-    RepeatMode: 0
-    Randomize: 1
-    TimeEnvelope:
-      AttackShape:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 1
-          outSlope: 1
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      DecayShape:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 1
-          inSlope: -1.0780033
-          outSlope: -1.0780033
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0.33333334
-        - serializedVersion: 3
-          time: 1
-          value: 0
-          inSlope: -1.0780033
-          outSlope: -1.0780033
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      AttackTime: 0.1
-      SustainTime: 0.1
-      DecayTime: 0.1
-      ScaleWithImpact: 1
-      HoldForever: 0
-    ImpactRadius: 100
-    DirectionMode: 0
-    DissipationMode: 2
-    DissipationDistance: 100
-    PropagationSpeed: 343
-  DefaultVelocity: {x: 0, y: -1, z: 0}
-  LayerMask:
+  playerLayer:
     serializedVersion: 2
     m_Bits: 8
-  IgnoreTag: 
-  UseImpactDirection: 0
-  ScaleImpactWithMass: 0
-  ScaleImpactWithSpeed: 0
+  attackDamage: 20

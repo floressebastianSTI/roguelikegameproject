@@ -1,42 +1,51 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
-
     public float walkSpeed;
-    Transform player;
-    Animator animator;
-    DamageScript damageScript;
-    Rigidbody2D rb;
+    private Transform player;
+    private Rigidbody2D rb;
     public int health;
+    private bool isKnockedBack;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
         rb = GetComponent<Rigidbody2D>();
-        damageScript = GetComponent<DamageScript>();
-    }
-
-    // Update is called once per frame
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
- 
     }
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.position, walkSpeed * Time.deltaTime);
+        if (!isKnockedBack) // Prevent movement during knockback
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, walkSpeed * Time.deltaTime);
+        }
     }
 
     public void OnHit(int damage, Vector2 knockback)
     {
-        rb.linearVelocity = new Vector2(knockback.x, rb.linearVelocity.y + knockback.y);
+        health -= damage;
+        StartCoroutine(KnockbackCoroutine(knockback));
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private IEnumerator KnockbackCoroutine(Vector2 knockback)
+    {
+        isKnockedBack = true;
+        rb.linearVelocity = Vector2.zero; 
+        rb.AddForce(knockback, ForceMode2D.Impulse);
+
+        yield return new WaitForSeconds(0.2f);
+        isKnockedBack = false;
+    }
+
+    private void Die()
+    {
+        
     }
 }

@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
 
     public float walkSpeed = 0f;
     public float runSpeed = 0f;
+    private float stopRunThreshold = 0.1f; 
+    private float stopRunTimer = 0f;
+    private float stopRunDelay = 0.2f; 
+
     Vector2 moveInput;
     private Vector2 pointerInput;
     private Vector3 lastMoveDir;
@@ -52,7 +56,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
-    private TESTAfterimageScript afterimageEffect;
+    private AfterimageScript afterimageEffect;
 
     [SerializeField]
     private InputActionReference pointerPosition;
@@ -102,7 +106,7 @@ public class PlayerController : MonoBehaviour
     //----------------------------------------------------// TESTING THEORY
     void Start()
     {
-        afterimageEffect = GetComponent<TESTAfterimageScript>();
+        afterimageEffect = GetComponent<AfterimageScript>();
     }
     void StopAfterimage()
     {
@@ -152,17 +156,36 @@ public class PlayerController : MonoBehaviour
 
         if (isAlive)
         {
-            IsMoving = moveInput != Vector2.zero;
+            bool wasMoving = IsMoving;
+            IsMoving = moveInput.sqrMagnitude > stopRunThreshold;
+
+            
+            if (!IsMoving && wasMoving)
+            {
+                stopRunTimer += Time.deltaTime;
+                if (stopRunTimer >= stopRunDelay)
+                {
+                    IsRunning = false;
+                    stopRunTimer = 0f;
+                }
+            }
+            else
+            {
+                stopRunTimer = 0f; 
+            }
         }
         else
         {
             IsMoving = false;
+            IsRunning = false;
         }
+
         if (moveInput.sqrMagnitude > 0.01f)
         {
             lastMoveDir = moveInput.normalized;
         }
     }
+
     public void OnRun(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -172,10 +195,21 @@ public class PlayerController : MonoBehaviour
         }
         else if (context.canceled)
         {
-            Invoke("StopAfterimage", 0.3f);
+            StartCoroutine(DelayedStopAfterimage());
             IsRunning = false;
         }
     }
+
+    private IEnumerator DelayedStopAfterimage()
+    {
+        yield return new WaitForSeconds(0.3f);
+        if (!IsRunning) 
+        {
+            afterimageEffect.StopAfterimage();
+        }
+    }
+
+
     //lastMoveDir = moveInput.normalized;
     //private Vector3 lastMoveDir;
     // Vector2 moveInput;
@@ -187,8 +221,7 @@ public class PlayerController : MonoBehaviour
             Transform dashEffectTransform = Instantiate(dashEffect, beforeDashPosition, Quaternion.identity);
 
             float angle = UtilsClass.GetAngleFromVectorFloat(lastMoveDir);
-
-            // Flip upside down when dashing left
+       
             if (lastMoveDir.x < 0)
             {
                 dashEffectTransform.eulerAngles = new Vector3(180, 0, -angle);

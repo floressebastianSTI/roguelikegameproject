@@ -9,16 +9,14 @@ public class Spawner : MonoBehaviour
 
     public Transform[] spawnPoints;
 
-    public int maxEnemies; // Maximum number of enemies
-    private int currentEnemyCount = 0; // Counter for spawned enemies
+    public int maxEnemies; 
+    private int currentEnemyCount = 0; 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Time.time > nextSpawnTime && currentEnemyCount < maxEnemies)
