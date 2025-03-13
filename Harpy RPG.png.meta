@@ -1,0 +1,1655 @@
+fileFormatVersion: 2
+guid: ec5282abd32b3674aa410183d5333898
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1073614332331543894
+    second: Harpy RPG_0
+  - first:
+      213: 281821499858001915
+    second: Harpy RPG_1
+  - first:
+      213: 8480803608682064078
+    second: Harpy RPG_2
+  - first:
+      213: 8173899837387153143
+    second: Harpy RPG_3
+  - first:
+      213: 1735733063888330213
+    second: Harpy RPG_4
+  - first:
+      213: -5908995199701441330
+    second: Harpy RPG_5
+  - first:
+      213: -2342092709220158789
+    second: Harpy RPG_6
+  - first:
+      213: 4553484087180910121
+    second: Harpy RPG_7
+  - first:
+      213: 6297152674344474727
+    second: Harpy RPG_8
+  - first:
+      213: -3263829627950616764
+    second: Harpy RPG_9
+  - first:
+      213: -1019684100357460205
+    second: Harpy RPG_10
+  - first:
+      213: 1353779455530320771
+    second: Harpy RPG_11
+  - first:
+      213: -6691463558639973454
+    second: Harpy RPG_12
+  - first:
+      213: -5225771526435947042
+    second: Harpy RPG_13
+  - first:
+      213: 2980103065838742771
+    second: Harpy RPG_14
+  - first:
+      213: 8024643173528510315
+    second: Harpy RPG_15
+  - first:
+      213: -848028805649217380
+    second: Harpy RPG_16
+  - first:
+      213: -8721951233891420416
+    second: Harpy RPG_17
+  - first:
+      213: -91043631061866951
+    second: Harpy RPG_18
+  - first:
+      213: -6189458980390720644
+    second: Harpy RPG_19
+  - first:
+      213: -5790810981515645125
+    second: Harpy RPG_20
+  - first:
+      213: -4108082367815246473
+    second: Harpy RPG_21
+  - first:
+      213: -6940882671796349174
+    second: Harpy RPG_22
+  - first:
+      213: -4158741973612281330
+    second: Harpy RPG_23
+  - first:
+      213: -3357285414269709900
+    second: Harpy RPG_24
+  - first:
+      213: -8322478634296012977
+    second: Harpy RPG_25
+  - first:
+      213: -694151251540090109
+    second: Harpy RPG_26
+  - first:
+      213: 7697410747342882816
+    second: Harpy RPG_27
+  - first:
+      213: 2607721781296187802
+    second: Harpy RPG_28
+  - first:
+      213: -4556751348171355038
+    second: Harpy RPG_29
+  - first:
+      213: 4942069465063739321
+    second: Harpy RPG_30
+  - first:
+      213: 609577185690156132
+    second: Harpy RPG_31
+  - first:
+      213: 3555271696541489900
+    second: Harpy RPG_32
+  - first:
+      213: -3208344267928921775
+    second: Harpy RPG_33
+  - first:
+      213: 3990258374730568295
+    second: Harpy RPG_34
+  - first:
+      213: -6934754868141854415
+    second: Harpy RPG_35
+  - first:
+      213: -3546037435043994350
+    second: Harpy RPG_36
+  - first:
+      213: -276429533930552852
+    second: Harpy RPG_37
+  - first:
+      213: -5035148098389528372
+    second: Harpy RPG_38
+  - first:
+      213: 9056461824982827610
+    second: Harpy RPG_39
+  - first:
+      213: -4416609149401406543
+    second: Harpy RPG_40
+  - first:
+      213: 617313373589510101
+    second: Harpy RPG_41
+  - first:
+      213: 8158939766584114697
+    second: Harpy RPG_42
+  - first:
+      213: -6932723393770404834
+    second: Harpy RPG_43
+  - first:
+      213: -5727153825768650958
+    second: Harpy RPG_44
+  - first:
+      213: 8920337642951398377
+    second: Harpy RPG_45
+  - first:
+      213: -7425741963329815311
+    second: Harpy RPG_46
+  - first:
+      213: 4120309105390022896
+    second: Harpy RPG_47
+  - first:
+      213: 830944692360618187
+    second: Harpy RPG_48
+  - first:
+      213: -8233522333985511684
+    second: Harpy RPG_49
+  - first:
+      213: 8598377032372775158
+    second: Harpy RPG_50
+  - first:
+      213: 6123392569845545029
+    second: Harpy RPG_51
+  - first:
+      213: 513980266425324617
+    second: Harpy RPG_52
+  - first:
+      213: 9148602183517792398
+    second: Harpy RPG_53
+  - first:
+      213: 2195822835646902869
+    second: Harpy RPG_54
+  - first:
+      213: 3282879546370760654
+    second: Harpy RPG_55
+  - first:
+      213: -3500509513640431005
+    second: Harpy RPG_56
+  - first:
+      213: 6168085335238707873
+    second: Harpy RPG_57
+  - first:
+      213: 9004897600622698478
+    second: Harpy RPG_58
+  - first:
+      213: -616873978215894284
+    second: Harpy RPG_59
+  - first:
+      213: 53506631918541214
+    second: Harpy RPG_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Harpy RPG_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 560
+        width: 73
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65dc3680c8e36ee00800000000000000
+      internalID: 1073614332331543894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 563
+        width: 83
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff9a15392b39e300800000000000000
+      internalID: 281821499858001915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 573
+        width: 107
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec86859e2fdd1b570800000000000000
+      internalID: 8480803608682064078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_3
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 570
+        width: 61
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe951d48968f6170800000000000000
+      internalID: 8173899837387153143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_4
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 572
+        width: 60
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5edd6f97600961810800000000000000
+      internalID: 1735733063888330213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_5
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 572
+        width: 63
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4ae4e4c280ffda0800000000000000
+      internalID: -5908995199701441330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_6
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 573
+        width: 76
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb276e307173f7fd0800000000000000
+      internalID: -2342092709220158789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_7
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 583
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92edfc2e6a9313f30800000000000000
+      internalID: 4553484087180910121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_8
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 507
+        width: 226
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76814ba5efaf36750800000000000000
+      internalID: 6297152674344474727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_9
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 551
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44fab92fe3c84b2d0800000000000000
+      internalID: -3263829627950616764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_10
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 551
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f641796ba59d1f0800000000000000
+      internalID: -1019684100357460205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_11
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 551
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3834b1ffd3799c210800000000000000
+      internalID: 1353779455530320771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_12
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 551
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb0bc7a8552323a0800000000000000
+      internalID: -6691463558639973454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_13
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 551
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd3f69eb745a77b0800000000000000
+      internalID: -5225771526435947042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_14
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 548
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fcee59f2f37b5920800000000000000
+      internalID: 2980103065838742771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_15
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 536
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f1e6f23724d5f60800000000000000
+      internalID: 8024643173528510315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_16
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 536
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98caf75b423b34f0800000000000000
+      internalID: -848028805649217380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_17
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 536
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0073f9b409765f680800000000000000
+      internalID: -8721951233891420416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_18
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 536
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936ee77cc4c8cbef0800000000000000
+      internalID: -91043631061866951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_19
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 536
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ba5f9b9df9a1aa0800000000000000
+      internalID: -6189458980390720644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_20
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 533
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f2455e718e2afa0800000000000000
+      internalID: -5790810981515645125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_21
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 385
+        width: 56
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d935e1ad82df6c0800000000000000
+      internalID: -4108082367815246473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_22
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 387
+        width: 66
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a071aeffbf70daf90800000000000000
+      internalID: -6940882671796349174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_23
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 388
+        width: 91
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02455e753e2946c0800000000000000
+      internalID: -4158741973612281330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_24
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 389
+        width: 89
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b19ad014b68861d0800000000000000
+      internalID: -3357285414269709900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_25
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 389
+        width: 77
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f0208c6cd908c80800000000000000
+      internalID: -8322478634296012977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_26
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 389
+        width: 86
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3036f8f4d11ed56f0800000000000000
+      internalID: -694151251540090109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_27
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 386
+        width: 68
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00885a5ca42b2da60800000000000000
+      internalID: 7697410747342882816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_28
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 465
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99453fc42d703420800000000000000
+      internalID: 2607721781296187802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_29
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 187
+        width: 73
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cc672aaca23c0c0800000000000000
+      internalID: -4556751348171355038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_30
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 187
+        width: 36
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bfcd688ef1c59440800000000000000
+      internalID: 4942069465063739321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_31
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 188
+        width: 55
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c7e308837a57800800000000000000
+      internalID: 609577185690156132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_32
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 192
+        width: 57
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea1b5875ccd65130800000000000000
+      internalID: 3555271696541489900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_33
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 193
+        width: 59
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1599fe803eba973d0800000000000000
+      internalID: -3208344267928921775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_34
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 189
+        width: 56
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762d7dbb9de306730800000000000000
+      internalID: 3990258374730568295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_35
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 189
+        width: 35
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1317ef7703dc2cf90800000000000000
+      internalID: -6934754868141854415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_36
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 190
+        width: 74
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21527f39db1f9cec0800000000000000
+      internalID: -3546037435043994350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_37
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 198
+        width: 67
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce184a0bdcce92cf0800000000000000
+      internalID: -276429533930552852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_38
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 199
+        width: 62
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0320c5b7f8f1ab0800000000000000
+      internalID: -5035148098389528372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_39
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 246
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52ccffeb040fad70800000000000000
+      internalID: 9056461824982827610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_40
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 246
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3603af06d05b2c0800000000000000
+      internalID: -4416609149401406543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_41
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 246
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d796eb1e33219800800000000000000
+      internalID: 617313373589510101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_42
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 246
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90efd036d706a3170800000000000000
+      internalID: 8158939766584114697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_43
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 0
+        width: 135
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e144644fdc40acf90800000000000000
+      internalID: -6932723393770404834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_44
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 14
+        width: 110
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2374a0170ff0580b0800000000000000
+      internalID: -5727153825768650958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_45
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 19
+        width: 51
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3d9a403d76bcb70800000000000000
+      internalID: 8920337642951398377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_46
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 18
+        width: 87
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fcb302170772f890800000000000000
+      internalID: -7425741963329815311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_47
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 20
+        width: 47
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0749f0d474e2930800000000000000
+      internalID: 4120309105390022896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_48
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 23
+        width: 47
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0a6209bcb188b00800000000000000
+      internalID: 830944692360618187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_49
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 27
+        width: 38
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf66c807f07acbd80800000000000000
+      internalID: -8233522333985511684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_50
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 35
+        width: 40
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8e473da52935770800000000000000
+      internalID: 8598377032372775158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_51
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 29
+        width: 32
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548f8e16919aaf450800000000000000
+      internalID: 6123392569845545029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_52
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 25
+        width: 28
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94497d14456022700800000000000000
+      internalID: 513980266425324617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_53
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 97
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88e0fbe63d56fe70800000000000000
+      internalID: 9148602183517792398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_54
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 97
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552bc6c2c31297e10800000000000000
+      internalID: 2195822835646902869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_55
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 97
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf13d1dd812f8d20800000000000000
+      internalID: 3282879546370760654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_56
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 18
+        width: 48
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3623692d421bb6fc0800000000000000
+      internalID: -3500509513640431005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_57
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 18
+        width: 39
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa0337bee0799550800000000000000
+      internalID: 6168085335238707873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_58
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 81
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef12e368a2d7fc70800000000000000
+      internalID: 9004897600622698478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_59
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 78
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f27249926c6077f0800000000000000
+      internalID: -616873978215894284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Harpy RPG_60
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 81
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99d1ac8ff71eb000800000000000000
+      internalID: 53506631918541214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
