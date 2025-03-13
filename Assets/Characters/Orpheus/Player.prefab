@@ -33,6 +33,91 @@ Transform:
   - {fileID: 8834088129894838629}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4548181054785189050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8081358169134402825}
+  - component: {fileID: 4754752613199173730}
+  m_Layer: 0
+  m_Name: SFXHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8081358169134402825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4548181054785189050}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4446639341956130037}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4754752613199173730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4548181054785189050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 3
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0, y: -1, z: 0}
 --- !u!1 &5180213880757792571
 GameObject:
   m_ObjectHideFlags: 0
@@ -51,6 +136,7 @@ GameObject:
   - component: {fileID: 2158474897197414651}
   - component: {fileID: 7741995712394628928}
   - component: {fileID: 1700795689593034014}
+  - component: {fileID: 4812394375178248232}
   m_Layer: 3
   m_Name: OrpheusCharacter
   m_TagString: Player
@@ -71,6 +157,7 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8081358169134402825}
   - {fileID: 6820604783501323294}
   m_Father: {fileID: 3077963627149814150}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -167,6 +254,7 @@ MonoBehaviour:
   runEffect: {fileID: 5536056765674139571, guid: 1a530b4ad2e857f488806c374937695f, type: 3}
   runEffectInterval: 0.12
   dashDistance: 4
+  dashCooldown: 1.5
   walkSpeed: 2
   runSpeed: 10
   pointerPosition: {fileID: -5630151704836100654, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
@@ -464,6 +552,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: acb50c71d2e7cde48bedaa6c7586932d, type: 2}
   duration: 0.1
+--- !u!114 &4812394375178248232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5180213880757792571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 3
+  m_ComponentVersion: 5
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -1, y: -1, z: 0}
+  - {x: -1, y: 1, z: 0}
+  - {x: 1, y: 1, z: 0}
+  - {x: 1, y: -1, z: 0}
+  m_ShapePathHash: 0
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 5521549631818196730}
+  m_ShadowShape2DProvider:
+    rid: 1888883193290424699
+  m_ShadowCastingSource: 2
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: -0.03125, y: 0, z: 0}
+      m_Extent: {x: 0.6875, y: 1, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0
+  m_CastingOption: 2
+  m_PreviousTrimEdge: 0
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowShape2DSource: {fileID: 5521549631818196730}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1888883193290424699
+      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data: 
 --- !u!1 &7135420214159755999
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,8 +659,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6820604783501323294}
-  - component: {fileID: 7098110457436493117}
-  - component: {fileID: 3018796112688468299}
+  - component: {fileID: 4323575098701950657}
   m_Layer: 0
   m_Name: AttackHandler
   m_TagString: Untagged
@@ -543,26 +683,7 @@ Transform:
   - {fileID: 276917859889455640}
   m_Father: {fileID: 4446639341956130037}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7098110457436493117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8395639411504949071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a66e49726b4cbe4f89ee9c242e94dd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Attack1: {fileID: 1954430868436983979, guid: 80226a6e7ecd39c4daa418d22883fb23, type: 3}
-  Attack2: {fileID: 3265548107119347153, guid: f53df6026212c554dae38ce2a6febf5d, type: 3}
-  Attack3: {fileID: 2821742451856569352, guid: a75164e147f2ecd4d9d4b2cdc6aa6a35, type: 3}
-  attackTransform: {fileID: 276917859889455640}
-  canAttack: 1
-  timeBetweenAttacks: 0.2
-  resetAttackTime: 1
---- !u!114 &3018796112688468299
+--- !u!114 &4323575098701950657
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

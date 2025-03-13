@@ -63,26 +63,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Enemies\Spawner.cs" />
+    <Compile Include="Assets\_Scripts\scrappedAfterImagescript.cs" />
+    <Compile Include="Assets\_Scripts\StateMachineBehaviorScript\SetBoolBehavior.cs" />
+    <Compile Include="Assets\_Scripts\DamageScript.cs" />
+    <Compile Include="Assets\Enemies\_tempPLACEHOLDER\_EnemyAIScriptPlaceholder.cs" />
+    <Compile Include="Assets\Enemies\_tempPLACEHOLDER\Enemy.cs" />
+    <Compile Include="Assets\_Scripts\StateMachineBehaviorScript\FadeawaySpriteScript.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
+    <Compile Include="Assets\_Scripts\UtilsClass.cs" />
+    <Compile Include="Assets\_Scripts\Player2Controller.cs" />
+    <Compile Include="Assets\_Scripts\AfterimageScript.cs" />
     <Compile Include="Assets\_Scripts\AttackScript.cs" />
     <Compile Include="Assets\_Scripts\HitFlashScript.cs" />
     <Compile Include="Assets\_Scripts\EnemyHitboxScript.cs" />
     <Compile Include="Assets\_Scripts\LungeDashHandler.cs" />
-    <Compile Include="Assets\_Scripts\scrappedAfterImagescript.cs" />
-    <Compile Include="Assets\_Scripts\StateMachineBehaviorScript\SetBoolBehavior.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
     <Compile Include="Assets\_Scripts\AnimationStrings.cs" />
-    <Compile Include="Assets\_Scripts\DamageScript.cs" />
-    <Compile Include="Assets\Enemies\_tempPLACEHOLDER\_EnemyAIScriptPlaceholder.cs" />
     <Compile Include="Assets\_Scripts\_AfterimagePool.cs" />
     <Compile Include="Assets\_Scripts\oldAttackHandler.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
     <Compile Include="Assets\_Scripts\HitboxScript.cs" />
-    <Compile Include="Assets\Enemies\_tempPLACEHOLDER\Enemy.cs" />
-    <Compile Include="Assets\_Scripts\StateMachineBehaviorScript\FadeawaySpriteScript.cs" />
+    <Compile Include="Assets\_Scripts\CameraShakeScript.cs" />
     <Compile Include="Assets\_Scripts\AttackVFXScript.cs" />
+    <Compile Include="Assets\_Scripts\HitboxScriptSpecial.cs" />
     <Compile Include="Assets\_Scripts\PlayerController.cs" />
-    <Compile Include="Assets\_Scripts\UtilsClass.cs" />
-    <Compile Include="Assets\_Scripts\Player2Controller.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
+    <Compile Include="Assets\_Scripts\HitStopScript.cs" />
     <Compile Include="Assets\Enemies\_tempPLACEHOLDER\EnemyAIScripts.cs" />
-    <Compile Include="Assets\_Scripts\AfterimageScript.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />
+    <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow.shader" />
+    <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Shader\SH Sprite Shadow Mask.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1141,6 +1154,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Services.Authentication.PlayerAccounts.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="PPv2URPConverters">
+      <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Multiplayer.Playmode">
       <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Playmode.dll</HintPath>
       <Private>False</Private>
@@ -1161,12 +1178,20 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.Aseprite.Common">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Splines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Splines.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Aseprite.Common">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
@@ -1237,6 +1262,10 @@
       <HintPath>Library\ScriptAssemblies\com.unity.multiplayer.tools.window.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Multiplayer.Tools.NetVis.Editor.Visualization">
       <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Tools.NetVis.Editor.Visualization.dll</HintPath>
       <Private>False</Private>
@@ -1285,6 +1314,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Services.QoS.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Multiplayer.Tools.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Multiplayer.Tools.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1327,6 +1360,14 @@
     </Reference>
     <Reference Include="Unity.Services.Multiplayer">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Multiplayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Multiplayer.Tools.NetStatsMonitor.Component">

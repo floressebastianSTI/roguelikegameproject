@@ -108,8 +108,7 @@ public class PlayerController : MonoBehaviour
         }
         set
         {
-            running = value; 
-            animator.SetBool("IsRunning", running && IsMoving);
+            running = value;
         }
     }
 
@@ -147,6 +146,16 @@ public class PlayerController : MonoBehaviour
                 bool isMouseRight = mousePosition.x > transform.position.x;
                 spriteRenderer.flipX = !isMouseRight;
             }
+
+            // Determine the facing direction
+            Vector2 facingDirection = spriteRenderer.flipX ? Vector2.left : Vector2.right;
+
+            // Determine if the movement is opposite to the facing direction
+            bool isMovingBackward = Vector2.Dot(facingDirection, moveInput) < 0;
+
+            // Apply running animation based on movement direction
+            animator.SetBool("IsRunningBackward", IsRunning && isMovingBackward);
+            animator.SetBool("IsRunningForward", IsRunning && !isMovingBackward);
         }
         else
         {
@@ -169,6 +178,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
     private Vector2 GetPointerInput()
     {
         Vector3 mousePosition = pointerPosition.action.ReadValue<Vector2>();
