@@ -218,8 +218,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bf4b18a479205144b5132e33dcafd5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shakeIntensity: 2.5
+  shakeDuration: 0.1
+  lifestealPercentage: 10
   attackDamage: 10
-  knockbackForce: 15
+  knockbackForce: 50
 --- !u!95 &111368243221624976
 Animator:
   serializedVersion: 7

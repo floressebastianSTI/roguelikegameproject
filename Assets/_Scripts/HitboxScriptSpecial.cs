@@ -3,6 +3,13 @@ using Unity.Cinemachine;
 
 public class HitboxScriptSpecial : MonoBehaviour
 {
+
+    [SerializeField]
+    private float shakeIntensity = 0f;
+
+    [SerializeField]
+    private float shakeDuration = 0f;
+
     public int attackDamage = 10;
     public float knockbackForce = 5f;
     public int attackIndex; // This will be set when the attack is instantiated
@@ -20,20 +27,10 @@ public class HitboxScriptSpecial : MonoBehaviour
 
         if (damageable != null)
         {
+            CameraShake.Instance.ShakeCamera(shakeIntensity, shakeDuration);
             Vector2 attackerPosition = transform.position;
             damageable.Hit(attackDamage, attackerPosition);
 
-            // Apply hitstop only on the third hit (index 2)
-            if (attackIndex == 2)
-            {
-                HitstopManager.Stop(0.15f, 0f); // Apply hitstop for impact
-
-                // Trigger Camera Shake
-                if (impulseSource != null)
-                {
-                    impulseSource.GenerateImpulseWithForce(2.0f); // Adjust intensity
-                }
             }
         }
     }
-}

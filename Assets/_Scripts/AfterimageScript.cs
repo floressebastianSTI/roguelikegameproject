@@ -6,8 +6,8 @@ public class AfterimageScript : MonoBehaviour
 {
     [Header("Afterimage Settings")]
     public float spawnRate = 0.1f;
-    public float afterimageLifetime = 0.5f;
-    public Color afterimageColor = new Color(1f, 1f, 1f, 0.5f);
+    public float afterimageLifetime = 0.2f;
+    public Color afterimageColor = new Color(1f, 1f, 1f, 0.2f);
 
     [SerializeField] private InputActionReference pointerPosition;
     [SerializeField] private SpriteRenderer spriteRenderer;

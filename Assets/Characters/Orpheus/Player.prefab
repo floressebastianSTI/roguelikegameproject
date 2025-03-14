@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3077963627149814150}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 2158474897197414651}
   - component: {fileID: 7741995712394628928}
   - component: {fileID: 1700795689593034014}
-  - component: {fileID: 4812394375178248232}
+  - component: {fileID: 5391325361869012940}
   m_Layer: 3
   m_Name: OrpheusCharacter
   m_TagString: Player
@@ -181,7 +181,7 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
@@ -250,6 +250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c80a9f682bb56744a248f1804434c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ghostSprite: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  distortionMaterial: {fileID: 2100000, guid: b2e44826e5f50f643a84b3c33df0148f, type: 2}
   dashEffect: {fileID: 784161876085773218, guid: c79b162b86573d045984b2e3d0590aa3, type: 3}
   runEffect: {fileID: 5536056765674139571, guid: 1a530b4ad2e857f488806c374937695f, type: 3}
   runEffectInterval: 0.12
@@ -425,6 +428,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: bc950f23-0170-415e-8d62-9c508860ae3a
     m_ActionName: 'Player2/Sprint[/Keyboard/shift]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ddaafad9-67d7-453f-9758-a3c1367e1b27
+    m_ActionName: 'Player/Ultimate[/Keyboard/r]'
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -533,9 +540,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4bebbbc6b90654bbdacf3653d6451c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 0.03
-  afterimageLifetime: 0.2
-  afterimageColor: {r: 1, g: 0, b: 0, a: 0.7882353}
+  spawnRate: 0.05
+  afterimageLifetime: 0.3
+  afterimageColor: {r: 0.6075471, g: 0, b: 0, a: 0.70980394}
   pointerPosition: {fileID: -5630151704836100654, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   spriteRenderer: {fileID: 5521549631818196730}
 --- !u!114 &1700795689593034014
@@ -552,7 +559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: acb50c71d2e7cde48bedaa6c7586932d, type: 2}
   duration: 0.1
---- !u!114 &4812394375178248232
+--- !u!114 &5391325361869012940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -561,50 +568,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5180213880757792571}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: d8ec7078553274f4baee8b369077be93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: 3
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 00000000
-  m_ShapePath:
-  - {x: -1, y: -1, z: 0}
-  - {x: -1, y: 1, z: 0}
-  - {x: 1, y: 1, z: 0}
-  - {x: 1, y: -1, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 5521549631818196730}
-  m_ShadowShape2DProvider:
-    rid: 1888883193290424699
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: -0.03125, y: 0, z: 0}
-      m_Extent: {x: 0.6875, y: 1, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 2
-  m_PreviousTrimEdge: 0
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 5521549631818196730}
-  references:
-    version: 2
-    RefIds:
-    - rid: 1888883193290424699
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  maxUltimateMeter: 100
+  meterDrainRate: 10
+  activationThreshold: 100
+  afterimageEffect: {fileID: 7741995712394628928}
 --- !u!1 &7135420214159755999
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +671,7 @@ MonoBehaviour:
   attackTransform: {fileID: 276917859889455640}
   canAttack: 0
   timeBetweenAttacks: 0.3
-  resetAttackTime: 2
+  resetAttackTime: 1
 --- !u!1 &8423942269398113224
 GameObject:
   m_ObjectHideFlags: 0

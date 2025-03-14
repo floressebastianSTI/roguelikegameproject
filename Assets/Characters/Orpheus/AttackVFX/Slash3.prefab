@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7214075953214595792}
   - component: {fileID: 8786460731205931473}
   - component: {fileID: 4877588962676392087}
-  - component: {fileID: 889012929775888793}
+  - component: {fileID: 1222872787062252206}
   m_Layer: 10
   m_Name: Slash3
   m_TagString: Untagged
@@ -235,7 +235,7 @@ PolygonCollider2D:
       - {x: 1.1875, y: -1.65625}
       - {x: 1.625, y: -1.1875}
   m_UseDelaunayMesh: 0
---- !u!114 &889012929775888793
+--- !u!114 &1222872787062252206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,9 +244,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2821742451856569352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe9250b72bed9945ad4fb52de0d986b, type: 3}
+  m_Script: {fileID: 11500000, guid: 9bf4b18a479205144b5132e33dcafd5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shakeIntensity: 5
+  shakeDuration: 0.1
+  lifestealPercentage: 15
   attackDamage: 20
-  knockbackForce: 60
-  attackIndex: 0
+  knockbackForce: 100

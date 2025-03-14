@@ -9,6 +9,15 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField]
+    public SpriteRenderer ghostSprite;
+
+    [SerializeField]
+    public SpriteRenderer spriteRenderer;
+
+    [SerializeField]
+    public Material distortionMaterial;
+
+    [SerializeField]
     public Transform dashEffect;
 
     [SerializeField]
@@ -28,9 +37,9 @@ public class PlayerController : MonoBehaviour
 
     public float walkSpeed = 0f;
     public float runSpeed = 0f;
-    private float stopRunThreshold = 0.1f; 
+    private float stopRunThreshold = 0.1f;
     private float stopRunTimer = 0f;
-    private float stopRunDelay = 0.2f; 
+    private float stopRunDelay = 0.2f;
 
     Vector2 moveInput;
     private Vector2 pointerInput;
@@ -67,7 +76,6 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
     Rigidbody2D rb;
-    SpriteRenderer spriteRenderer;
     private AfterimageScript afterimageEffect;
 
     [SerializeField]
@@ -113,14 +121,6 @@ public class PlayerController : MonoBehaviour
     }
 
     //----------------------------------------------------// TESTING THEORY
-    void Start()
-    {
-        afterimageEffect = GetComponent<AfterimageScript>();
-    }
-    void StopAfterimage()
-    {
-        afterimageEffect.StopAfterimage();
-    }
 
     //---------------------------------------------------------------------//
 
@@ -131,6 +131,7 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.flipX = false;
     }
+
     void FixedUpdate()
     {
         rb.linearVelocity = moveInput * CurrentMoveSpeed;
@@ -194,7 +195,7 @@ public class PlayerController : MonoBehaviour
             bool wasMoving = IsMoving;
             IsMoving = moveInput.sqrMagnitude > stopRunThreshold;
 
-            
+
             if (!IsMoving && wasMoving)
             {
                 stopRunTimer += Time.deltaTime;
@@ -206,7 +207,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                stopRunTimer = 0f; 
+                stopRunTimer = 0f;
             }
         }
         else
@@ -225,24 +226,24 @@ public class PlayerController : MonoBehaviour
     {
         if (context.started)
         {
-            afterimageEffect.StartAfterimage();
+           // afterimageEffect.StartAfterimage();
             IsRunning = true;
         }
         else if (context.canceled)
         {
-            StartCoroutine(DelayedStopAfterimage());
+           // StartCoroutine(DelayedStopAfterimage());
             IsRunning = false;
         }
     }
 
-    private IEnumerator DelayedStopAfterimage()
-    {
-        yield return new WaitForSeconds(0.3f);
-        if (!IsRunning) 
-        {
-            afterimageEffect.StopAfterimage();
-        }
-    }
+    //private IEnumerator DelayedStopAfterimage()
+    //{
+      //  yield return new WaitForSeconds(0.3f);
+       // if (!IsRunning)
+      //  {
+        //    afterimageEffect.StopAfterimage();
+        //}
+   // }
 
 
     //lastMoveDir = moveInput.normalized;
@@ -272,12 +273,20 @@ public class PlayerController : MonoBehaviour
             dashEffectTransform.eulerAngles = new Vector3(0, 0, angle);
         }
 
-        float dashEffectWidth = 5f;
+        float dashEffectWidth = 30f;
         dashEffectTransform.localScale = new Vector3(dashDistance / dashEffectWidth, 1f, 1f);
         transform.position += lastMoveDir * dashDistance;
 
         yield return new WaitForSeconds(dashCooldown);
 
         canDash = true;
+    }
+    void Start()
+    {
+        afterimageEffect = GetComponent<AfterimageScript>();
+    }
+    void StopAfterimage()
+    {
+        afterimageEffect.StopAfterimage();
     }
 }
