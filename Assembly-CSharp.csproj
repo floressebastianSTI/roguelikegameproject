@@ -63,22 +63,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Enemies\Spawner.cs" />
-    <Compile Include="Assets\_Scripts\scrappedAfterImagescript.cs" />
+    <Compile Include="Assets\Enemies\enemyHARD\_EnemyAI.cs" />
     <Compile Include="Assets\_Scripts\StateMachineBehaviorScript\SetBoolBehavior.cs" />
     <Compile Include="Assets\_Scripts\DamageScript.cs" />
+    <Compile Include="Assets\_Scripts\InfiniteTilemapScript.cs" />
+    <Compile Include="Assets\Enemies\EnemyHitboxScript.cs" />
+    <Compile Include="Assets\_Scripts\UltimateModeScript.cs" />
     <Compile Include="Assets\Enemies\_tempPLACEHOLDER\_EnemyAIScriptPlaceholder.cs" />
-    <Compile Include="Assets\Enemies\_tempPLACEHOLDER\Enemy.cs" />
+    <Compile Include="Assets\Enemies\EnemyBulletHitboxScript.cs" />
     <Compile Include="Assets\_Scripts\StateMachineBehaviorScript\FadeawaySpriteScript.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
+    <Compile Include="Assets\Enemies\EnemyDamageScript.cs" />
     <Compile Include="Assets\_Scripts\UtilsClass.cs" />
     <Compile Include="Assets\_Scripts\Player2Controller.cs" />
     <Compile Include="Assets\_Scripts\AfterimageScript.cs" />
+    <Compile Include="Assets\Enemies\enemyHARD\_EnemyRangedAI.cs" />
     <Compile Include="Assets\_Scripts\AttackScript.cs" />
     <Compile Include="Assets\_Scripts\HitFlashScript.cs" />
-    <Compile Include="Assets\_Scripts\EnemyHitboxScript.cs" />
     <Compile Include="Assets\_Scripts\LungeDashHandler.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\SpriteColorAnimation.cs" />
     <Compile Include="Assets\_Scripts\AnimationStrings.cs" />
+    <Compile Include="Assets\Enemies\RangedEnemyHitboxScript.cs" />
     <Compile Include="Assets\_Scripts\_AfterimagePool.cs" />
     <Compile Include="Assets\_Scripts\oldAttackHandler.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\CameraFollow.cs" />
@@ -90,7 +95,7 @@
     <Compile Include="Assets\_Scripts\PlayerController.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\LayerTrigger.cs" />
     <Compile Include="Assets\_Scripts\HitStopScript.cs" />
-    <Compile Include="Assets\Enemies\_tempPLACEHOLDER\EnemyAIScripts.cs" />
+    <Compile Include="Assets\Enemies\enemyHARD\_EnemyShoot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cainos\Pixel Art Top Down - Basic\Changelog.txt" />

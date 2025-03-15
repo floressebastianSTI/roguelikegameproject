@@ -5,6 +5,7 @@ public class Spawner : MonoBehaviour
     public float timeBetweenSpawns;
     float nextSpawnTime;
 
+    [Header("Spawned Enemy")]
     public GameObject enemy;
 
     public Transform[] spawnPoints;
