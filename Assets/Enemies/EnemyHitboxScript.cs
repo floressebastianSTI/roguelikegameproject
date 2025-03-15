@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyHitboxScript : MonoBehaviour
 {
+    [Header("Settings")]
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private Collider2D detectionCollider;  // Detects player to trigger attack
     [SerializeField] private Collider2D attackHitboxCollider; // Deals damage when attacking

@@ -5,9 +5,6 @@ public class EnemyAI : MonoBehaviour
 {
     public float walkSpeed;
 
-    [SerializeField]
-    public GameObject hitEffect;
-
     private Transform player;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -25,34 +22,17 @@ public class EnemyAI : MonoBehaviour
     {
         if (!isKnockedBack && player != null)
         {
-            // Move towards the player
+
             Vector2 direction = (player.position - transform.position).normalized;
             rb.linearVelocity = direction * walkSpeed;
 
-            // Flip the sprite based on the player's position
             spriteRenderer.flipX = player.position.x < transform.position.x;
         }
     }
 
     public void OnHit(int damage, Vector2 knockback, Vector2 hitPoint, Vector2 hitDirection)
     {
-        SpawnHitEffect(hitPoint, hitDirection);
         StartCoroutine(KnockbackCoroutine(knockback));
-    }
-
-    public void SpawnHitEffect(Vector2 hitPoint, Vector2 hitDirection)
-    {
-        if (hitEffect)
-        {
-            // Instantiate hit effect at hit position
-            GameObject HitEffect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-
-            // Rotate the effect to point away from the attack direction
-            float angle = Mathf.Atan2(hitDirection.y, hitDirection.x) * Mathf.Rad2Deg;
-            HitEffect.transform.rotation = Quaternion.Euler(0, 0, angle);
-
-            Destroy(HitEffect, 1.5f); // Destroy after 0.5 seconds
-        }
     }
 
     private IEnumerator KnockbackCoroutine(Vector2 knockback)

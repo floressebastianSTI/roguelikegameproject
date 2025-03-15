@@ -9,6 +9,7 @@ public class AttackScript : MonoBehaviour
     private Camera mainCam;
     private Vector3 mousePosition;
 
+    [Header("Attack Handler")]
     [SerializeField]
     public GameObject Attack1, Attack2, Attack3;
 

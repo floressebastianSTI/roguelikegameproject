@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ac95cf03fe3354caf69e854dc499c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileDuration: 1
   force: 1
 --- !u!95 &8786460731205931473
 Animator:
@@ -249,6 +250,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeIntensity: 5
   shakeDuration: 0.1
-  lifestealPercentage: 15
+  lifestealPercentage: 5
   attackDamage: 20
   knockbackForce: 100

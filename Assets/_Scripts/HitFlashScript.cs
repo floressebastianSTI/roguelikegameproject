@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class HitFlashScript : MonoBehaviour
 {
+    [Header("VFX Setting")]
     [SerializeField]
     private Material flashMaterial;
 
+    [Header("Timer Settings")]
     [SerializeField]
     private float duration;
 

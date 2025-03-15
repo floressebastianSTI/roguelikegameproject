@@ -3,11 +3,14 @@ using UnityEngine.InputSystem;
 
 public class AttackVFXScript : MonoBehaviour
 {
+    [Header("Attack VFX Settings")]
+    public float projectileDuration = 1f;
+    public float force;
+
     private Vector3 mousePosition;
     private Camera mainCam;
     private Rigidbody2D rb;
     private Collider2D hitbox;
-    public float force;
 
     private void Start()
     {
@@ -23,6 +26,6 @@ public class AttackVFXScript : MonoBehaviour
         float rotate = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rotate);
 
-        Destroy(gameObject, 1f);    
+        Destroy(gameObject, projectileDuration);    
     }
 }

@@ -7,8 +7,15 @@ public class DamageScript : MonoBehaviour
     CinemachineImpulseSource impulseSource;
     Animator animator;
 
+    [Header("VFX Settings")]
     [SerializeField] private HitFlashScript flashEffect;
-    [SerializeField] private int _health = 1000;
+
+    [Header("HP Value")]
+    [SerializeField]
+    private int _health = 1000;
+
+    [SerializeField]
+    public int maxHP = 250;
 
     public int hp
     {
@@ -100,10 +107,9 @@ public class DamageScript : MonoBehaviour
         }
     }
 
-    // New method: Heal the player (called when the player deals damage)
     public void PlayerHeal(int healAmount)
     {
-        hp += healAmount;
+        hp = Mathf.Min(hp + healAmount, maxHP); // Prevent overheal
         Debug.Log("Player Healed: " + healAmount + " | Current HP: " + hp);
     }
 

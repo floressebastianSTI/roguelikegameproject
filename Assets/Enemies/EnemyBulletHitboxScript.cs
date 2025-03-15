@@ -9,6 +9,8 @@ public class EnemyBulletHitboxScript : MonoBehaviour
 {
     private GameObject player;
     private Rigidbody2D rb;
+
+    [Header("Projectile Speed Settings")]
     public float force;
 
     private void Start()

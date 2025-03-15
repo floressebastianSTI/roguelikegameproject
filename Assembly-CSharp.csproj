@@ -64,7 +64,6 @@
   <ItemGroup>
     <Compile Include="Assets\Enemies\Spawner.cs" />
     <Compile Include="Assets\Enemies\enemyHARD\_EnemyAI.cs" />
-    <Compile Include="Assets\_Scripts\scrappedAfterImagescript.cs" />
     <Compile Include="Assets\_Scripts\StateMachineBehaviorScript\SetBoolBehavior.cs" />
     <Compile Include="Assets\_Scripts\DamageScript.cs" />
     <Compile Include="Assets\_Scripts\InfiniteTilemapScript.cs" />

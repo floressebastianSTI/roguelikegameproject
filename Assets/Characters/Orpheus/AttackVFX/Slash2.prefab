@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ac95cf03fe3354caf69e854dc499c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileDuration: 1
   force: 0
 --- !u!60 &5308124826706847003
 PolygonCollider2D:
@@ -220,7 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeIntensity: 2.5
   shakeDuration: 0.1
-  lifestealPercentage: 10
+  lifestealPercentage: 2.5
   attackDamage: 10
   knockbackForce: 50
 --- !u!95 &111368243221624976

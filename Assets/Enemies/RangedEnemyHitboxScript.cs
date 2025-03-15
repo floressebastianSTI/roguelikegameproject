@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class RangedEnemyHitboxScript : MonoBehaviour
 {
+    [Header("Settings")]
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private int attackDamage = 0;
 

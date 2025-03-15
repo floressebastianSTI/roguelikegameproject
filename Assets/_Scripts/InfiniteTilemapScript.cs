@@ -3,17 +3,15 @@ using UnityEngine.Tilemaps;
 
 public class TilemapLooper : MonoBehaviour
 {
-    public Transform playerTransform;  // Player reference
-    public Tilemap[] tilemaps;  // Assign all 9 tilemaps in Inspector
-    public int tilemapSize = 10; // Adjust to match your tilemap size
-
+    public Transform playerTransform; 
+    public Tilemap[] tilemaps; 
+    public int tilemapSize = 10; 
     private Vector3Int lastPlayerCell;
 
     void Start()
     {
         if (playerTransform == null || tilemaps.Length != 9)
         {
-            //Debug.LogError("Assign the player and exactly 9 tilemaps in the Inspector!");
             return;
         }
 
@@ -50,7 +48,6 @@ public class TilemapLooper : MonoBehaviour
             {
                 Vector3 moveOffset = new Vector3(offsetX * tilemapSize, offsetY * tilemapSize, 0);
                 tilemap.transform.position += moveOffset;
-                //Debug.Log($"Moved Tilemap {tilemap.name} by {moveOffset}");
             }
         }
     }

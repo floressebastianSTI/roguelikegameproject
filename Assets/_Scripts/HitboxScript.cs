@@ -3,10 +3,18 @@ using UnityEngine;
 
 public class HitboxScript : MonoBehaviour
 {
-    [SerializeField] private float shakeIntensity = 0f;
-    [SerializeField] private float shakeDuration = 0f;
-    [SerializeField] private float lifestealPercentage = 0.1f; // 10% Lifesteal
+    [Header("Camera Shake Settings")]
+    [SerializeField]
+    private float shakeIntensity = 0f;
 
+    [SerializeField]
+    private float shakeDuration = 0f;
+
+    [Header("Orpheus Lifesteal Settings")]
+    [SerializeField] 
+    private float lifestealPercentage = 0.1f; // 10% Lifesteal
+
+    [Header("Attack Properties")]
     public int attackDamage = 10;
     public float knockbackForce = 5f;
     private CinemachineImpulseSource impulseSource;

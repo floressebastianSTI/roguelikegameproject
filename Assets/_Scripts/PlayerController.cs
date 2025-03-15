@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private float runEffectInterval = 0.2f;
+
+    [SerializeField]
     private float runEffectTimer = 0f;
 
     [SerializeField]
@@ -41,7 +43,7 @@ public class PlayerController : MonoBehaviour
     private float stopRunTimer = 0f;
     private float stopRunDelay = 0.2f;
 
-    Vector2 moveInput;
+    public Vector2 moveInput;
     private Vector2 pointerInput;
     private Vector3 lastMoveDir;
     public float CurrentMoveSpeed
@@ -76,6 +78,7 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
     Rigidbody2D rb;
+
     private AfterimageScript afterimageEffect;
 
     [SerializeField]
@@ -86,6 +89,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private bool running = false;
+
+    public bool canMove;
 
     public bool CanMove
     {
@@ -132,7 +137,7 @@ public class PlayerController : MonoBehaviour
         spriteRenderer.flipX = false;
     }
 
-    void FixedUpdate()
+    public void FixedUpdate()
     {
         rb.linearVelocity = moveInput * CurrentMoveSpeed;
 
@@ -180,7 +185,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private Vector2 GetPointerInput()
+    public  Vector2 GetPointerInput()
     {
         Vector3 mousePosition = pointerPosition.action.ReadValue<Vector2>();
         mousePosition.z = Camera.main.nearClipPlane;

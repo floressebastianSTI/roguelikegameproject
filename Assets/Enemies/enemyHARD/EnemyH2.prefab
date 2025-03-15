@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 7260156530219137147}
   m_Layer: 10
   m_Name: EnemyH2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,11 +230,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0a5e5cb879f9846b864732e5243516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 3.4
   stopDistance: 15
   retreatDistance: 10
-  separationDistance: 4
-  separationForce: 5
+  separationDistance: 20
+  separationForce: 30
   hitEffect: {fileID: 6877158708109517779, guid: 3c9513162fea9bc4991b27290f44ed70, type: 3}
 --- !u!114 &614279081439089933
 MonoBehaviour:
@@ -282,11 +282,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1954430868436983979, guid: 8352aed4363412042aeb86869baa100b, type: 3}
   firePoint: {fileID: 3961589639103209223}
-  attackCooldown: 2
+  attackRange: 15
+  shootCooldown: 1.5
   projectileCount: 7
-  spreadAngle: 60
-  projectileSpeed: 5
-  animator: {fileID: 6414911714895695236}
+  spreadAngle: -50
+  projectileSpeed: 10
 --- !u!1 &4770649987926877950
 GameObject:
   m_ObjectHideFlags: 0

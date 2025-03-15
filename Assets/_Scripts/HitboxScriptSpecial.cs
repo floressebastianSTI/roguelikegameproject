@@ -4,12 +4,14 @@ using Unity.Cinemachine;
 public class HitboxScriptSpecial : MonoBehaviour
 {
 
+    [Header("Camera Shake Settings")]
     [SerializeField]
     private float shakeIntensity = 0f;
 
     [SerializeField]
     private float shakeDuration = 0f;
 
+    [Header("Attack Interaction Settings")]
     public int attackDamage = 10;
     public float knockbackForce = 5f;
     public int attackIndex; // This will be set when the attack is instantiated
