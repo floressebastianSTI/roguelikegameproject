@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
     }
 
     Animator animator;
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     private AfterimageScript afterimageEffect;
 
@@ -126,6 +126,19 @@ public class PlayerController : MonoBehaviour
     }
 
     //----------------------------------------------------// TESTING THEORY
+    public void UpdateMovementState()
+    {
+        if (moveInput != Vector2.zero)
+        {
+            IsMoving = true;
+            animator.SetBool("IsMoving", true);
+        }
+        else
+        {
+            IsMoving = false;
+            animator.SetBool("IsMoving", false);
+        }
+    }
 
     //---------------------------------------------------------------------//
 

@@ -98,7 +98,7 @@ public class EnemyDamageScript : MonoBehaviour
 
             if (playerUltimate != null)
             {
-                playerUltimate.AddUltimateMeter(damage * 2f);
+                playerUltimate.AddUltimateMeter(damage * 0.2f);
             }
         }
     }

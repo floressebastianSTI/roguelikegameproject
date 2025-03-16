@@ -7,10 +7,11 @@ public class AttackVFXScript : MonoBehaviour
     public float projectileDuration = 1f;
     public float force;
 
+    public static float ultimateSizeMultiplier = 1f; // Default size
+
     private Vector3 mousePosition;
     private Camera mainCam;
     private Rigidbody2D rb;
-    private Collider2D hitbox;
 
     private void Start()
     {
@@ -26,6 +27,9 @@ public class AttackVFXScript : MonoBehaviour
         float rotate = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rotate);
 
-        Destroy(gameObject, projectileDuration);    
+        // Apply size multiplier
+        transform.localScale *= ultimateSizeMultiplier;
+
+        Destroy(gameObject, projectileDuration);
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 201cb7f136de65c419699a82f6d8238e
+guid: 33c6e798893298740b151b924e8114ae
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -32,6 +32,18 @@ TextureImporter:
   - first:
       213: 2546431354915841519
     second: devilOrpheusIdle-Sheet_9
+  - first:
+      213: 3087937546829957856
+    second: devilOrpheusIdle-Sheet_10
+  - first:
+      213: -7345605798910524392
+    second: devilOrpheusIdle-Sheet_11
+  - first:
+      213: 7983174757416883683
+    second: devilOrpheusIdle-Sheet_12
+  - first:
+      213: -3296980571218303343
+    second: devilOrpheusIdle-Sheet_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -148,7 +160,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.42}
+      pivot: {x: 0.5, y: 0.424}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,7 +182,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.42}
+      pivot: {x: 0.5, y: 0.424}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,7 +204,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.42}
+      pivot: {x: 0.5, y: 0.424}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,7 +226,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.42}
+      pivot: {x: 0.5, y: 0.424}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -236,7 +248,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.42}
+      pivot: {x: 0.5, y: 0.424}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,7 +270,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.42}
+      pivot: {x: 0.5, y: 0.424}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,11 +283,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: devilOrpheusIdle-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac0d19fae0028c30800000000000000
+      internalID: 4360048398449839269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: devilOrpheusIdle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 955290e13f102a850800000000000000
+      internalID: 6386669365257381209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6e596c21307f27d42841665c31aee900
+    spriteID: fede561f08816064dac7dfff992594a0
     internalID: 0
     vertices: []
     indices: 
@@ -291,6 +347,8 @@ TextureImporter:
       devilOrpheusIdle-Sheet_3: -2624680080375436885
       devilOrpheusIdle-Sheet_4: -6975715309519954797
       devilOrpheusIdle-Sheet_5: 1345784999991050973
+      devilOrpheusIdle-Sheet_6: 4360048398449839269
+      devilOrpheusIdle-Sheet_7: 6386669365257381209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

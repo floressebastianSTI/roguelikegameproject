@@ -12,10 +12,12 @@ public class UltimateMode : MonoBehaviour
     public Camera playerCamera;
 
     public float maxUltimateMeter = 100f;
-    public float meterDrainRate = 10f; 
-    public float activationThreshold = 50f; 
+    public float meterDrainRate = 10f;
+    public float activationThreshold = 50f;
     private float currentUltimateMeter;
     private bool isUltimateActive = false;
+
+    Vector2 lastMoveInput = Vector2.zero;
 
     private PlayerController playerController;
     private AttackScript attackScript;
@@ -28,6 +30,16 @@ public class UltimateMode : MonoBehaviour
     [Header("Ultimate Animator")]
     [SerializeField]
     private RuntimeAnimatorController ultimateAnimator;
+
+    [Header("Additional VFX")]
+    [SerializeField]
+    private GameObject smokeEffect;
+
+    [SerializeField]
+    private GameObject weakerExplosionEffect;
+
+    [SerializeField]
+    private GameObject extraExplosionEffect;
 
     [Header("VFX Settings")]
     [SerializeField]
@@ -54,6 +66,9 @@ public class UltimateMode : MonoBehaviour
     [SerializeField]
     public float explosionShakeDelay = 0f;
 
+    [SerializeField]
+    public float explosionSmokeDelay = 0f;
+
     [Header("Camera Settings")]
     [SerializeField]
     private CinemachineCamera cinemachineCamera;
@@ -65,7 +80,7 @@ public class UltimateMode : MonoBehaviour
     private float zoomOutSize = 5f;
 
     [SerializeField]
-    private float zoomInDuration = 0.5f; 
+    private float zoomInDuration = 0.5f;
 
     [SerializeField]
     private float zoomOutDuration = 0.1f;
@@ -82,6 +97,9 @@ public class UltimateMode : MonoBehaviour
 
     [SerializeField]
     public float endTransformDuration;
+
+    [Header("TEST PURPOSES ONLY, SET IT BACK TO ZERO ONCE DONE")]
+    public float ultimateMeterAmount = 0f;
 
     void Start()
     {
@@ -101,7 +119,7 @@ public class UltimateMode : MonoBehaviour
             colorAdjustments.postExposure.value = 0;
         }
 
-        currentUltimateMeter = 0;
+        currentUltimateMeter = ultimateMeterAmount;
         impulseSource = FindAnyObjectByType<CinemachineImpulseSource>();
         playerController = GetComponent<PlayerController>();
         attackScript = GetComponentInChildren<AttackScript>();
@@ -158,37 +176,33 @@ public class UltimateMode : MonoBehaviour
     IEnumerator TransformationSequence()
     {
         StartTransformation();
-
         TriggerExplosion();
         StartCoroutine(ExplosionSequence());
 
         CameraShake.Instance.ShakeCamera(startTransformIntensity, startTransformDuration);
-
+     
+        playerController.rb.linearVelocity = Vector2.zero; // Stop any movement
         playerController.moveInput = Vector2.zero;
         playerController.IsMoving = false;
         playerController.IsRunning = false;
-        playerController.canMove = false;  
+        playerController.canMove = false;
+        playerController.enabled = false;
 
-       
         if (animator != null)
         {
             animator.SetTrigger("UltimateTrigger");
         }
 
- 
-        StartCoroutine(AdjustCameraZoom(zoomInSize, zoomInDuration)); 
+        StartCoroutine(AdjustCameraZoom(zoomInSize, zoomInDuration));
 
         yield return new WaitForSecondsRealtime(1.6f);
 
         CameraShake.Instance.ShakeCamera(endTransformIntensity, endTransformDuration);
 
         EndTransformation();
-
         StartCoroutine(AdjustCameraZoom(zoomOutSize, zoomOutDuration));
 
         ActivateUltimate();
-
-        playerController.canMove = true;
     }
 
 
@@ -217,9 +231,10 @@ public class UltimateMode : MonoBehaviour
         isUltimateActive = true;
 
         playerController.walkSpeed *= 1.3f;
-        playerController.runSpeed *= 1.3f;
+        playerController.runSpeed *= 2.3f;
+        attackScript.timeBetweenAttacks *= 1.2f;
 
-        attackScript.timeBetweenAttacks *= 0.7f;
+        AttackVFXScript.ultimateSizeMultiplier = 2f;
 
         AfterimageScript afterimage = GetComponent<AfterimageScript>();
         if (afterimage != null)
@@ -235,8 +250,14 @@ public class UltimateMode : MonoBehaviour
         {
             animator.runtimeAnimatorController = ultimateAnimator;
         }
-    }
 
+        playerController.rb.linearVelocity = Vector2.zero;
+
+        playerController.enabled = true;
+        playerController.canMove = true;
+
+        playerController.UpdateMovementState();
+    }
     void TriggerExplosion()
     {
         if (explosionEffect)
@@ -245,6 +266,13 @@ public class UltimateMode : MonoBehaviour
             Invoke("TriggerCameraShake", explosionShakeDelay);
         }
 
+        // Spawn extra explosion VFX for more impact
+        if (extraExplosionEffect)
+        {
+            Instantiate(extraExplosionEffect, transform.position, Quaternion.identity);
+        }
+
+        // Deal damage and knockback to enemies
         Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
         foreach (Collider2D enemy in enemies)
         {
@@ -260,7 +288,6 @@ public class UltimateMode : MonoBehaviour
                 if (enemyDamage)
                 {
                     enemyDamage.Hit(explosionDamage, transform.position);
-
                 }
             }
         }
@@ -290,9 +317,11 @@ public class UltimateMode : MonoBehaviour
         currentUltimateMeter = 0;
 
         playerController.walkSpeed /= 1.3f;
-        playerController.runSpeed /= 1.3f;
+        playerController.runSpeed /= 2.3f;
 
-        attackScript.timeBetweenAttacks /= 0.7f;
+        attackScript.timeBetweenAttacks /= 1.2f;
+
+        AttackVFXScript.ultimateSizeMultiplier = 1f;
 
         AfterimageScript afterimage = GetComponent<AfterimageScript>();
         if (afterimage != null)
@@ -305,7 +334,16 @@ public class UltimateMode : MonoBehaviour
             animator.runtimeAnimatorController = originalAnimator;
         }
 
-        TriggerExplosion();
+        // Trigger a weaker explosion on deactivation
+        if (weakerExplosionEffect)
+        {
+            Instantiate(weakerExplosionEffect, transform.position, Quaternion.identity);
+        }
+
+        // Reset screen effect
+        EndTransformation();
+
+        playerController.UpdateMovementState();
     }
 
     public void AddUltimateMeter(float amount)
@@ -348,11 +386,21 @@ public class UltimateMode : MonoBehaviour
     {
         Instantiate(explosionEffect, transform.position, Quaternion.identity);
 
+        // Extra explosion effect for more impact
+        if (extraExplosionEffect)
+        {
+            Instantiate(extraExplosionEffect, transform.position, Quaternion.identity);
+        }
+
         yield return new WaitForSeconds(explosionShakeDelay);
 
         if (CameraShake.Instance != null)
         {
             CameraShake.Instance.ShakeCamera(explosionShakeIntensity, explosionShakeDuration);
         }
+
+        yield return new WaitForSeconds(explosionSmokeDelay);
+
+        Instantiate(smokeEffect);
     }
 }

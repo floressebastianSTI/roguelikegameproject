@@ -38,7 +38,7 @@ public class EnemyBulletHitboxScript : MonoBehaviour
         DamageScript damageScript = playerObject.GetComponent<DamageScript>();
         if (damageScript != null)
         {
-            damageScript.hp -= 10;
+            damageScript.hp -= 5;
         // Call the flash effect on the player's script
         DamageScript playerComponent = playerObject.GetComponent<DamageScript>();
         if (playerComponent != null)
