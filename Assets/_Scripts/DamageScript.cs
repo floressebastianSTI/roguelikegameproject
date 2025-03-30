@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DamageScript : MonoBehaviour
 {
@@ -12,7 +13,10 @@ public class DamageScript : MonoBehaviour
     [SerializeField] private HitFlashScript flashEffect;
 
     [Header("HP Value")]
-    public Slider hpSlider;
+    public Slider hpSlider1; //Board HP Bar
+    public Slider hpSlider2; //Above player head HP Bar
+    public TextMeshProUGUI hpValue; //HP Bar text amount value
+
     [SerializeField]
     private int _health;
     [SerializeField]
@@ -84,12 +88,13 @@ public class DamageScript : MonoBehaviour
     {
         if (IsAlive && !isInvincible)
         {
-            hp -= damage;
             isInvincible = true;
             flashEffect.Flash();
 
-            hpSlider.value = _health;
-            hpSlider.maxValue = maxHP;
+            hp -= damage;
+            hpSlider1.value = hp;
+            hpSlider2.value = hp;
+            hpValue.text = $"{hp.ToString()} / {maxHp.ToString()}";
 
             EnemyAI enemyAI = GetComponent<EnemyAI>();
             RangedEnemyAI rangedEnemyAI = GetComponent<RangedEnemyAI>();
