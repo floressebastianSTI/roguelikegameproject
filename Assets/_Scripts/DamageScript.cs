@@ -1,4 +1,4 @@
-using UnityEngine;
+sing UnityEngine;
 using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine.UI;
@@ -94,7 +94,7 @@ public class DamageScript : MonoBehaviour
             hp -= damage;
             hpSlider1.value = hp;
             hpSlider2.value = hp;
-            hpValue.text = $"{hp.ToString()} / {maxHp.ToString()}";
+            hpValue.text = $"{hp.ToString()} / {maxHP.ToString()}";
 
             EnemyAI enemyAI = GetComponent<EnemyAI>();
             RangedEnemyAI rangedEnemyAI = GetComponent<RangedEnemyAI>();
