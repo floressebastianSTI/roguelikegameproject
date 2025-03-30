@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Unity.Cinemachine;
+using UnityEngine.UI;
 
 public class DamageScript : MonoBehaviour
 {
@@ -11,12 +12,11 @@ public class DamageScript : MonoBehaviour
     [SerializeField] private HitFlashScript flashEffect;
 
     [Header("HP Value")]
+    public Slider hpSlider;
     [SerializeField]
-    private int _health = 1000;
-
+    private int _health;
     [SerializeField]
     public int maxHP = 250;
-
     public int hp
     {
         get { return _health; }
@@ -87,6 +87,9 @@ public class DamageScript : MonoBehaviour
             hp -= damage;
             isInvincible = true;
             flashEffect.Flash();
+
+            hpSlider.value = _health;
+            hpSlider.maxValue = maxHP;
 
             EnemyAI enemyAI = GetComponent<EnemyAI>();
             RangedEnemyAI rangedEnemyAI = GetComponent<RangedEnemyAI>();
