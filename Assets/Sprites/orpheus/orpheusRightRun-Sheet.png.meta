@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: a0ebc98e0cabd304fb690db644b7ffc0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7440244374212655839
+    second: orpheusSideRun-Sheet_0
+  - first:
+      213: 2032506226390815627
+    second: orpheusSideRun-Sheet_1
+  - first:
+      213: 7983307991509465556
+    second: orpheusSideRun-Sheet_2
+  - first:
+      213: 7780127851336677499
+    second: orpheusSideRun-Sheet_3
+  - first:
+      213: 553941187016847704
+    second: orpheusSideRun-Sheet_4
+  - first:
+      213: 7940164458755678266
+    second: orpheusSideRun-Sheet_5
+  - first:
+      213: -3958693108378957814
+    second: orpheusSideRun-Sheet_6
+  - first:
+      213: -5279269917482407675
+    second: orpheusSideRun-Sheet_7
+  - first:
+      213: 3480730130870117535
+    second: orpheusSideRun-Sheet_8
+  - first:
+      213: 4712656178979043762
+    second: orpheusSideRun-Sheet_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: orpheusSideRun-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda3b0796de014760800000000000000
+      internalID: 7440244374212655839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orpheusSideRun-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: b835bcbe4a9e43c10800000000000000
+      internalID: 2032506226390815627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orpheusSideRun-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9757622586ace60800000000000000
+      internalID: 7983307991509465556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orpheusSideRun-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78bb065f0198fb60800000000000000
+      internalID: 7780127851336677499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orpheusSideRun-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851f89e139effa700800000000000000
+      internalID: 553941187016847704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orpheusSideRun-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: a306056a181213e60800000000000000
+      internalID: 7940164458755678266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orpheusSideRun-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08094c8795ef09c0800000000000000
+      internalID: -3958693108378957814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orpheusSideRun-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5092e071bf34cb6b0800000000000000
+      internalID: -5279269917482407675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orpheusSideRun-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: f942381cc990e4030800000000000000
+      internalID: 3480730130870117535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orpheusSideRun-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 40, y: 0}
+        - {x: 0, y: 32}
+        - {x: -40, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9789873d7b66140800000000000000
+      internalID: 4712656178979043762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 859cbb4e9613d00459aa3bd6f779d0c6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      orpheusSideRun-Sheet_0: 7440244374212655839
+      orpheusSideRun-Sheet_1: 2032506226390815627
+      orpheusSideRun-Sheet_2: 7983307991509465556
+      orpheusSideRun-Sheet_3: 7780127851336677499
+      orpheusSideRun-Sheet_4: 553941187016847704
+      orpheusSideRun-Sheet_5: 7940164458755678266
+      orpheusSideRun-Sheet_6: -3958693108378957814
+      orpheusSideRun-Sheet_7: -5279269917482407675
+      orpheusSideRun-Sheet_8: 3480730130870117535
+      orpheusSideRun-Sheet_9: 4712656178979043762
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,31 +5,37 @@ public class AttackVFXScript : MonoBehaviour
 {
     [Header("Attack VFX Settings")]
     public float projectileDuration = 1f;
-    public float force;
+    public float force; 
 
-    public static float ultimateSizeMultiplier = 1f; // Default size
+    public static float ultimateSizeMultiplier = 1f; 
 
-    private Vector3 mousePosition;
     private Camera mainCam;
     private Rigidbody2D rb;
+    private Vector3 targetDirection;
 
     private void Start()
     {
-        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        mainCam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
 
-        Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
-        mousePosition = mainCam.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, mainCam.nearClipPlane));
-        Vector3 direction = mousePosition - transform.position;
-        Vector3 rotation = transform.position - mousePosition;
+        Vector3 mouseScreenPosition = Mouse.current.position.ReadValue();
+        Vector3 mouseWorldPosition = mainCam.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, mainCam.nearClipPlane));
+        mouseWorldPosition.z = 0;
 
-        rb.linearVelocity = new Vector2(direction.x, direction.y).normalized * force;
-        float rotate = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rotate);
+        targetDirection = (mouseWorldPosition - transform.position).normalized;
 
-        // Apply size multiplier
+        rb.linearVelocity = targetDirection * force;
+
+        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle);
+
         transform.localScale *= ultimateSizeMultiplier;
 
         Destroy(gameObject, projectileDuration);
+    }
+
+    private void Update()
+    {
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 }

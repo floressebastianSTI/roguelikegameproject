@@ -4,42 +4,48 @@ using UnityEngine;
 public class HitboxScript : MonoBehaviour
 {
     [Header("Camera Shake Settings")]
-    [SerializeField]
-    private float shakeIntensity = 0f;
-
-    [SerializeField]
-    private float shakeDuration = 0f;
+    [SerializeField] private float shakeIntensity = 0f;
+    [SerializeField] private float shakeDuration = 0f;
 
     [Header("Orpheus Lifesteal Settings")]
-    [SerializeField] 
-    private float lifestealPercentage = 0.1f; // 10% Lifesteal
+    [SerializeField] private float lifestealPercentage = 0.1f; // 10% Lifesteal
 
     [Header("Attack Properties")]
     public int attackDamage = 10;
     public float knockbackForce = 5f;
     private CinemachineImpulseSource impulseSource;
-    private DamageScript playerDamageScript; // Reference to player's damage script
+    private DamageScript playerDamageScript;
 
     private void Start()
     {
         impulseSource = FindAnyObjectByType<CinemachineImpulseSource>();
-        playerDamageScript = FindAnyObjectByType<DamageScript>(); // Get player's damage script
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerDamageScript = player.GetComponent<DamageScript>();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EnemyDamageScript damageable = collision.GetComponent<EnemyDamageScript>();
+        // Early exit if not an enemy
+        if (!collision.TryGetComponent<EnemyDamageScript>(out var damageable))
+            return;
 
-        if (damageable != null)
+        // Safe camera shake
+        if (CameraShake.Instance != null)
         {
             CameraShake.Instance.ShakeCamera(shakeIntensity, shakeDuration);
-            Vector2 attackerPosition = transform.position;
-            damageable.Hit(attackDamage, attackerPosition);
+        }
 
-            // Apply lifesteal
+        // Apply damage and knockback
+        damageable.Hit(attackDamage, transform.position, knockbackForce);
+
+        // Safe lifesteal application
+        if (playerDamageScript != null)
+        {
             int healAmount = Mathf.RoundToInt(attackDamage * lifestealPercentage);
             playerDamageScript.PlayerHeal(healAmount);
         }
     }
 }
-

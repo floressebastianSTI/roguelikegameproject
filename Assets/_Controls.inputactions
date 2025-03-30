@@ -15,15 +15,6 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Mouse Position",
-                    "type": "Value",
-                    "id": "6b444451-8a00-4d00-a97e-f47457f736a8",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
                     "name": "Attack",
                     "type": "Button",
                     "id": "6c2ab1b8-8984-453a-af3d-a3c78ae1679a",
@@ -33,7 +24,25 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Unique Attack Skill",
+                    "type": "Button",
+                    "id": "0a44712c-deaa-4b85-9975-70f948c63fbc",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Unique Skill",
+                    "type": "Button",
+                    "id": "d8e2858e-c388-459f-b172-126ba41d53d7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Mobility Skill",
                     "type": "Button",
                     "id": "3866f640-706d-4d06-bad5-fdefbafaa158",
                     "expectedControlType": "",
@@ -42,7 +51,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Ultimate",
+                    "name": "Ultimate Skill",
                     "type": "Button",
                     "id": "ddaafad9-67d7-453f-9758-a3c1367e1b27",
                     "expectedControlType": "",
@@ -58,6 +67,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Mouse Position",
+                    "type": "Value",
+                    "id": "6b444451-8a00-4d00-a97e-f47457f736a8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -141,11 +159,11 @@
                 {
                     "name": "",
                     "id": "a29eaaae-ab20-471b-a305-21bea7b4e1b5",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Unique Skill",
+                    "action": "Mobility Skill",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -167,7 +185,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Ultimate",
+                    "action": "Ultimate Skill",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e632e083-f3a6-4022-93c5-f06122b199e5",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Unique Attack Skill",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65d61fbf-36fd-4b7a-be45-0c21e8efc495",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Unique Skill",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

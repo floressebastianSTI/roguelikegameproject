@@ -1,74 +1,74 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class AttackScript : MonoBehaviour
 {
-    private Camera mainCam;
-    private Vector3 mousePosition;
+    [Header("Attack Settings")]
+    [SerializeField] private GameObject[] attackPrefabs; // Array of attack prefabs for the combo
+    [SerializeField] private Transform crosshairTransform; // The orbiting crosshair/attack point
+    [SerializeField] public float timeBetweenAttacks = 0.5f; // Cooldown between attacks
+    [SerializeField] private float comboResetTime = 2f; // Time before the combo resets
 
-    [Header("Attack Handler")]
-    [SerializeField]
-    public GameObject Attack1, Attack2, Attack3;
-
-    public Transform attackTransform;
-
-    public bool canAttack;
-    public float timeBetweenAttacks;
-    public float resetAttackTime = 2f;
-    private float timer;
+    public bool canAttack = true;
     private float lastAttackTime;
     private int attackIndex = 0;
+    private PlayerMovement playerMovement;
 
-    private GameObject[] attackObjects;
-
-    void Start()
+    private void Awake()
     {
-        mainCam = Camera.main;
-        attackObjects = new GameObject[] { Attack1, Attack2, Attack3 };
+        playerMovement = GetComponentInParent<PlayerMovement>();
+        if (playerMovement == null)
+        {
+            Debug.LogError("PlayerMovement component not found on the same GameObject!");
+        }
     }
 
-    private void Update()
+    void Update()
     {
-        mousePosition = mainCam.ScreenToWorldPoint(new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, mainCam.nearClipPlane));
+        // Check if the player can attack and if the left mouse button is pressed
+        if (canAttack && Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            PerformAttack();
+        }
 
-        Vector3 rotation = mousePosition - transform.position;
-        Vector2 scale = transform.localScale;
-
-        scale.y = rotation.x < 0 ? -1 : 1;
-        transform.localScale = scale;
-
-        float rotateZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rotateZ);
-
+        // Handle attack cooldown
         if (!canAttack)
         {
-            timer += Time.deltaTime;
-            if (timer > timeBetweenAttacks)
+            if (Time.time - lastAttackTime >= timeBetweenAttacks)
             {
                 canAttack = true;
-                timer = 0;
             }
         }
 
-        if (Time.time - lastAttackTime > resetAttackTime)
+        // Reset the combo if too much time has passed between attacks
+        if (Time.time - lastAttackTime >= comboResetTime)
         {
             attackIndex = 0;
         }
-
-        if (Mouse.current.leftButton.wasPressedThisFrame && canAttack)
-        {
-            canAttack = false;
-            lastAttackTime = Time.time; // Update last attack time
-            Instantiate(attackObjects[attackIndex], attackTransform.position, Quaternion.identity);
-            attackIndex = (attackIndex + 1) % attackObjects.Length; // Cycle through attacks
-        }
     }
 
-    //-----------------------------------------------------// TESTING THEORY
+    private void PerformAttack()
+    {
+        // Skip attack if inputs are blocked (during Fafnir skill)
+        if (playerMovement != null && playerMovement.blockAllInputs)
+        {
+            return;
+        }
 
+        // Update the last attack time and disable attacking temporarily
+        lastAttackTime = Time.time;
+        canAttack = false;
 
-    //-----------------------------------------------------------------------//
+        // Instantiate the attack effect at the crosshair's position and rotation
+        GameObject attackInstance = Instantiate(attackPrefabs[attackIndex], crosshairTransform.position, crosshairTransform.rotation);
+
+        // Cycle through the attack combo
+        attackIndex = (attackIndex + 1) % attackPrefabs.Length;
+    }
+
+    // Method to get the current attack index
+    public int GetCurrentAttackIndex()
+    {
+        return attackIndex;
+    }
 }

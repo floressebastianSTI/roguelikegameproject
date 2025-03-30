@@ -10,6 +10,9 @@ public class RangedEnemyAI : MonoBehaviour
     public float separationDistance = 1.5f; // Minimum distance between enemies
     public float separationForce = 2f; // How strongly enemies push away from each other
 
+    [Header("Attack Settings")]
+    public float attackPauseDuration = 0.5f; // How long the enemy stops when attacking
+
     [Header("Hit Effect")]
     [SerializeField] private GameObject hitEffect;
 
@@ -19,6 +22,7 @@ public class RangedEnemyAI : MonoBehaviour
     private Animator animator;
     private bool isKnockedBack;
     private bool isAlive = true;
+    private bool isAttacking;
 
     void Start()
     {
@@ -34,7 +38,7 @@ public class RangedEnemyAI : MonoBehaviour
     {
         if (player == null || !isAlive) return;
 
-        if (!isKnockedBack)
+        if (!isKnockedBack && !isAttacking)
         {
             HandleMovement();
             FlipSprite();
@@ -93,6 +97,25 @@ public class RangedEnemyAI : MonoBehaviour
         spriteRenderer.flipX = player.position.x < transform.position.x;
     }
 
+    public void StartAttack()
+    {
+        if (!isAttacking)
+        {
+            StartCoroutine(AttackPauseCoroutine());
+        }
+    }
+
+    private IEnumerator AttackPauseCoroutine()
+    {
+        isAttacking = true;
+        rb.linearVelocity = Vector2.zero; // Stop movement
+        animator.SetBool("IsMoving", false);
+
+        yield return new WaitForSeconds(attackPauseDuration);
+
+        isAttacking = false;
+    }
+
     public void OnHit(int damage, Vector2 knockback, Vector2 hitPoint, Vector2 hitDirection)
     {
         SpawnHitEffect(hitPoint, hitDirection);
@@ -130,4 +153,3 @@ public class RangedEnemyAI : MonoBehaviour
         }
     }
 }
-

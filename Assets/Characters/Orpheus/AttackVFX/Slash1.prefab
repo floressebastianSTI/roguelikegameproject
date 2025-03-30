@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 1437939896206462668}
   - component: {fileID: 2777085948834797503}
   - component: {fileID: -5582107104494377138}
-  - component: {fileID: -850806414111790793}
   - component: {fileID: 4631479760036600397}
-  - component: {fileID: 7131006481346839696}
   - component: {fileID: 3720698675808601460}
-  m_Layer: 10
+  - component: {fileID: 5474363630237339805}
+  - component: {fileID: -4343615013041121963}
+  m_Layer: 3
   m_Name: Slash1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.7, y: 0.6, z: 1}
+  m_LocalScale: {x: 3, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 9
-  m_Sprite: {fileID: 4764741370268277547, guid: 5b071829ad9f86e4796062870678d827, type: 3}
+  m_Sprite: {fileID: 8430175229827359221, guid: 08f53cb611f2c4a458383ffa1c45ae96, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,20 +119,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-850806414111790793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954430868436983979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31ac95cf03fe3354caf69e854dc499c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileDuration: 1
-  force: 0
 --- !u!95 &4631479760036600397
 Animator:
   serializedVersion: 7
@@ -155,14 +141,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &7131006481346839696
-PolygonCollider2D:
+--- !u!114 &3720698675808601460
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954430868436983979}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf4b18a479205144b5132e33dcafd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeIntensity: 2
+  shakeDuration: 0.1
+  lifestealPercentage: 0.3
+  attackDamage: 5
+  knockbackForce: 0
+--- !u!60 &5474363630237339805
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954430868436983979}
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -171,7 +174,7 @@ PolygonCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -192,7 +195,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.62, y: 0.42}
+    pivot: {x: -0.1, y: 0.4}
     oldSize: {x: 6, y: 4}
     newSize: {x: 6, y: 4}
     adaptiveTilingThreshold: 0.5
@@ -201,43 +204,40 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.28, y: -0.3675003}
-      - {x: 1.155, y: -0.2112503}
-      - {x: 0.56125, y: 0.007499695}
-      - {x: 0.93625, y: 0.007499695}
-      - {x: 1.12375, y: 0.038749695}
-      - {x: 1.31125, y: 0.1949997}
-      - {x: 1.31125, y: 0.3199997}
-      - {x: 1.0925, y: 0.5074997}
-      - {x: 0.56125, y: 0.4449997}
-      - {x: 0.31124997, y: 0.9449997}
-      - {x: 0.24874997, y: 0.9762497}
-      - {x: 0.12374997, y: 0.9762497}
-      - {x: 0.09249997, y: 0.9137497}
-      - {x: 0.09249997, y: 0.4762497}
-      - {x: -0.845, y: 0.2887497}
-      - {x: -1.50125, y: 0.1949997}
-      - {x: -2.43875, y: 0.101249695}
-      - {x: -2.47, y: 0.038749695}
-      - {x: -2.43875, y: -0.055000305}
-      - {x: -1.18875, y: -0.3050003}
-      - {x: -0.28250003, y: -0.4300003}
-      - {x: -0.18875003, y: -0.5237503}
-      - {x: 0.06124997, y: -0.5237503}
-      - {x: 0.18624997, y: -0.8987503}
-      - {x: 0.24874997, y: -0.9612503}
-      - {x: 0.40499997, y: -0.9612503}
-      - {x: 0.78, y: -0.5550003}
-      - {x: 1.2175, y: -0.4612503}
-      - {x: 1.28, y: -0.3987503}
-    - - {x: 0.81125, y: -0.023750305}
-      - {x: 0.8425, y: -0.117500305}
-      - {x: 0.93625, y: -0.117500305}
-      - {x: 0.99875, y: -0.055000305}
-      - {x: 0.9675, y: 0.038749695}
-      - {x: 0.87375, y: 0.038749695}
+    - - {x: 5.35, y: 0.05624962}
+      - {x: 5.35, y: 0.14999962}
+      - {x: 5.31875, y: 0.21249962}
+      - {x: 3.878715, y: 1.0305612}
+      - {x: 1.9719739, y: 2.1452641}
+      - {x: 2.7875, y: 0.9937496}
+      - {x: 1.8146117, y: 1.2328061}
+      - {x: 2.6456845, y: 0.7788032}
+      - {x: 2.2072282, y: 0.64666265}
+      - {x: 2.31875, y: 0.49374962}
+      - {x: 2.0375, y: 0.5874996}
+      - {x: 1.5687499, y: 0.49374962}
+      - {x: 1.5687499, y: 0.36874962}
+      - {x: 1.5999999, y: 0.27499962}
+      - {x: 1.7874999, y: 0.27499962}
+      - {x: 1.6937499, y: 0.21249962}
+      - {x: 1.6937499, y: 0.05624962}
+      - {x: 2.00625, y: -0.0062503815}
+      - {x: 1.5687499, y: -0.28750038}
+      - {x: 1.6312499, y: -0.41250038}
+      - {x: 2.4125, y: -0.5062504}
+      - {x: 1.8672802, y: -0.9821403}
+      - {x: 2.3802931, y: -1.057806}
+      - {x: 3.2537143, y: -0.91695184}
+      - {x: 4.043527, y: -0.7042287}
+      - {x: 5.13125, y: -0.06875038}
+    - - {x: 1.8812499, y: 0.05624962}
+      - {x: 1.9124999, y: -0.03750038}
+      - {x: 2.00625, y: -0.03750038}
+      - {x: 2.06875, y: 0.024999619}
+      - {x: 2.0375, y: 0.11874962}
+      - {x: 1.9437499, y: 0.11874962}
   m_UseDelaunayMesh: 0
---- !u!114 &3720698675808601460
+--- !u!114 &-4343615013041121963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -246,11 +246,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1954430868436983979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bf4b18a479205144b5132e33dcafd5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 227a96d32dab7854bbbc1b496b2a7a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeIntensity: 2
-  shakeDuration: 0.1
-  lifestealPercentage: 2.5
-  attackDamage: 10
-  knockbackForce: 50
+  damage: 5
+  stunDuration: 1

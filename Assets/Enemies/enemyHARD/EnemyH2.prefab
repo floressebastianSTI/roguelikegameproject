@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 8728592188942614583}
   - component: {fileID: 3744001058051198289}
   - component: {fileID: 7857338773239597433}
-  - component: {fileID: 992275009337110066}
   - component: {fileID: 3832200912247086537}
   - component: {fileID: 6414911714895695236}
   - component: {fileID: 855253002132869849}
   - component: {fileID: 614279081439089933}
   - component: {fileID: 9018680058228766219}
   - component: {fileID: 7260156530219137147}
+  - component: {fileID: 7459216234698225962}
+  - component: {fileID: 4585535074296048862}
   m_Layer: 10
   m_Name: EnemyH2
   m_TagString: Enemy
@@ -104,7 +105,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3461236543574467082}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -122,43 +123,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
---- !u!58 &992275009337110066
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3461236543574467082}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.105918646, y: -2.3654985}
-  m_Radius: 1.4331019
+  m_Constraints: 4
 --- !u!70 &3832200912247086537
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -193,8 +158,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.035305023, y: -2.6479447}
-  m_Size: {x: 4.772711, y: 5.9025025}
+  m_Offset: {x: 0.05603999, y: 0.3012839}
+  m_Size: {x: 2.5749776, y: 4.0677767}
   m_Direction: 0
 --- !u!95 &6414911714895695236
 Animator:
@@ -230,11 +195,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0a5e5cb879f9846b864732e5243516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 2
   stopDistance: 15
   retreatDistance: 10
-  separationDistance: 50
-  separationForce: 60
+  separationDistance: 0
+  separationForce: 0
+  attackPauseDuration: 0.5
   hitEffect: {fileID: 6877158708109517779, guid: 3c9513162fea9bc4991b27290f44ed70, type: 3}
 --- !u!114 &614279081439089933
 MonoBehaviour:
@@ -262,12 +228,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a324260569d9a6a4d971b48d9f0f1314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStunned: 0
   flashEffect: {fileID: 614279081439089933}
-  _health: 20
+  explosionEffect: {fileID: 0}
+  _health: 60
   _isAlive: 1
   _IsHit: 1
   isInvincible: 0
   invincibilityTime: 0.4
+  currentState:
+    isStunned: 0
+    stunEndTime: 0
+    preStunVelocity: {x: 0, y: 0}
+    preStunAnimSpeed: 0
+    preStunColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &7260156530219137147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +261,41 @@ MonoBehaviour:
   projectileCount: 3
   spreadAngle: 100
   projectileSpeed: 10
+--- !u!114 &7459216234698225962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3461236543574467082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa292a109805207419e0dccb880e9ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentStun:
+    isStunned: 0
+    stunEndTime: 0
+    preStunVelocity: {x: 0, y: 0}
+    preStunAnimSpeed: 0
+    preStunColor: {r: 0, g: 0, b: 0, a: 0}
+    preStunBodyType: 0
+--- !u!114 &4585535074296048862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3461236543574467082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05900d0652fcb9b4ca0bc20e754ae766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
+  stoppingDistance: 1
+  avoidanceRadius: 20
+  avoidanceForce: 200
 --- !u!1 &4770649987926877950
 GameObject:
   m_ObjectHideFlags: 0

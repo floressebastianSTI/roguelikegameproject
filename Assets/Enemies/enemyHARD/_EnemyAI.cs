@@ -4,11 +4,12 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public float walkSpeed;
+    public float stoppingDistance = 1f; // Distance at which the enemy stops moving
 
     private Transform player;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
-
+    private int currentHealth;
     private bool isKnockedBack;
 
     void Start()
@@ -22,9 +23,17 @@ public class EnemyAI : MonoBehaviour
     {
         if (!isKnockedBack && player != null)
         {
+            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-            Vector2 direction = (player.position - transform.position).normalized;
-            rb.linearVelocity = direction * walkSpeed;
+            if (distanceToPlayer > stoppingDistance)
+            {
+                Vector2 direction = (player.position - transform.position).normalized;
+                rb.linearVelocity = direction * walkSpeed;
+            }
+            else
+            {
+                rb.linearVelocity = Vector2.zero; // Stop movement when within stopping distance
+            }
 
             spriteRenderer.flipX = player.position.x < transform.position.x;
         }
@@ -32,7 +41,15 @@ public class EnemyAI : MonoBehaviour
 
     public void OnHit(int damage, Vector2 knockback, Vector2 hitPoint, Vector2 hitDirection)
     {
-        StartCoroutine(KnockbackCoroutine(knockback));
+        currentHealth -= damage; // Reduce health
+        //if (currentHealth <= 0)
+       // {
+          //  Die(hitDirection); // Call Die method when health reaches zero
+       // }
+       // else
+        {
+            StartCoroutine(KnockbackCoroutine(knockback));
+        }
     }
 
     private IEnumerator KnockbackCoroutine(Vector2 knockback)
@@ -44,6 +61,7 @@ public class EnemyAI : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         isKnockedBack = false;
     }
+
     void DealDamage(EnemyAI enemy, int damage, Vector2 knockback, Vector2 attackPosition)
     {
         if (enemy != null)

@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 517361993861873527}
   - component: {fileID: 1511701884029716711}
   - component: {fileID: 1392163606252182483}
-  - component: {fileID: 3293365323642191225}
   - component: {fileID: 7908687660555745261}
   - component: {fileID: 2308397018334002903}
   - component: {fileID: 6294609815691341687}
+  - component: {fileID: 3293365323642191225}
   m_Layer: 10
   m_Name: EnemyH1
   m_TagString: Enemy
@@ -49,7 +49,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3029026763177166164}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -113,7 +113,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 1098029941249784488, guid: 1d581c4f23204a04d944e3baa737acd9, type: 3}
-  m_Color: {r: 0.78867924, g: 0.16517623, b: 0.16517623, a: 0.8117647}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.47843137}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -157,7 +157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883a57df63359d4459f3e4359e2af26f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 9
+  walkSpeed: 8
+  stoppingDistance: 1
 --- !u!114 &1511701884029716711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: 4942ad8a104cb614d95533a51a4c2a89, type: 2}
-  duration: 0.2
+  duration: 0.05
 --- !u!114 &1392163606252182483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,24 +192,6 @@ MonoBehaviour:
   attackHitboxCollider: {fileID: 7908687660555745261}
   attackDamage: 20
   playerInRange: 0
---- !u!114 &3293365323642191225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3029026763177166164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a324260569d9a6a4d971b48d9f0f1314, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashEffect: {fileID: 1511701884029716711}
-  _health: 30
-  _isAlive: 1
-  _IsHit: 1
-  isInvincible: 0
-  invincibilityTime: 0.4
 --- !u!60 &7908687660555745261
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -349,3 +332,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0.40047932, y: -1.1799712}
   m_Size: {x: 2.8009663, y: 4.343279}
   m_Direction: 0
+--- !u!114 &3293365323642191225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029026763177166164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a324260569d9a6a4d971b48d9f0f1314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashEffect: {fileID: 1511701884029716711}
+  _health: 30
+  _isAlive: 1
+  _IsHit: 1
+  isInvincible: 0
+  invincibilityTime: 0.4
+  knockback: 10
