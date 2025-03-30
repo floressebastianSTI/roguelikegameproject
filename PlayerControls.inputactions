@@ -1,0 +1,54 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "5170b9bb-e3af-4188-b973-c7ce53be1d77",
+            "actions": [
+                {
+                    "name": "Chat",
+                    "type": "Button",
+                    "id": "265057ec-ad04-4eec-93d1-0feadb50a58a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SubmitName",
+                    "type": "Button",
+                    "id": "b5391682-c315-46a6-b9a0-6a470b9ab598",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "26c38fb3-5577-4a51-a925-3f8a3b855c8d",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Chat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ffa5fe90-17ed-418f-91c1-5e3c558ee510",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SubmitName",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
