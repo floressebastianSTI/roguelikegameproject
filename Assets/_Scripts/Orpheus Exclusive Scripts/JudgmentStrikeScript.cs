@@ -3,7 +3,7 @@ using UnityEngine;
 public class PunchVFX : MonoBehaviour
 {
     [Header("Stun Settings")]
-    [SerializeField] private float freezeDuration = 1.5f;
+    [SerializeField] private float freezeDuration = 3f;
     [SerializeField] private Color freezeColor = new Color(0.7f, 0.7f, 1f, 1f);
 
     private FafnirSkill fafnirSkill;
@@ -66,7 +66,7 @@ public class PunchVFX : MonoBehaviour
         }
     }
 
-    private bool IsEnemy(Collider2D collider)
+    public bool IsEnemy(Collider2D collider)
     {
         return ((1 << collider.gameObject.layer) & fafnirSkill.EnemyLayers) != 0;
     }

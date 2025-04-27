@@ -427,14 +427,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfcbcef28303e4447a651761aee3414a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenSpawns: 1
-  enemy: {fileID: 5065148543179987906, guid: 64355ee34fd5c4245b362ece92ce249f, type: 3}
-  spawnPoints:
-  - {fileID: 1344121756}
-  - {fileID: 1305647835}
-  - {fileID: 1305647835}
-  - {fileID: 1305647835}
-  maxEnemies: 6
 --- !u!4 &516760230
 Transform:
   m_ObjectHideFlags: 0
@@ -1093,14 +1085,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfcbcef28303e4447a651761aee3414a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenSpawns: 1
-  enemy: {fileID: 3461236543574467082, guid: f0bb9fd748f84cd468be92b366b878cd, type: 3}
-  spawnPoints:
-  - {fileID: 2089184064}
-  - {fileID: 548255370}
-  - {fileID: 548255370}
-  - {fileID: 548255370}
-  maxEnemies: 10
 --- !u!4 &1602354711
 Transform:
   m_ObjectHideFlags: 0
@@ -1211,14 +1195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfcbcef28303e4447a651761aee3414a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenSpawns: 1
-  enemy: {fileID: 3461236543574467082, guid: f0bb9fd748f84cd468be92b366b878cd, type: 3}
-  spawnPoints:
-  - {fileID: 1078872675}
-  - {fileID: 91887461}
-  - {fileID: 91887461}
-  - {fileID: 91887461}
-  maxEnemies: 10
 --- !u!4 &1746681169
 Transform:
   m_ObjectHideFlags: 0
@@ -1267,14 +1243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfcbcef28303e4447a651761aee3414a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenSpawns: 1
-  enemy: {fileID: 3029026763177166164, guid: 85538e359b70abc4ea0fb8b8adbd6241, type: 3}
-  spawnPoints:
-  - {fileID: 2089874760}
-  - {fileID: 1676192886}
-  - {fileID: 1676192886}
-  - {fileID: 1676192886}
-  maxEnemies: 20
 --- !u!4 &1778878600
 Transform:
   m_ObjectHideFlags: 0

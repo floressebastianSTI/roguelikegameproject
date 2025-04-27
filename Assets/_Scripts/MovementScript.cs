@@ -47,6 +47,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isAttackDashing) return; // Skip movement updates during attack dash
 
+        // Ensure Singleton is valid and check if chat is focused
+        if (ChatManager.Singleton != null && ChatManager.Singleton.IsChatFocused)
+        {
+            return; // Skip movement if the chat input is focused
+        }
+
         Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         Vector2 directionToMouse = (mousePosition - (Vector2)transform.position).normalized;
 
@@ -76,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Flip sprite for left direction
         spriteRenderer.flipX = (direction == "Left");
+      
     }
 
     void FixedUpdate()
@@ -108,6 +115,10 @@ public class PlayerMovement : MonoBehaviour
             movementInput = Vector2.zero;
             IsMoving = false;
             isRunning = false;
+        }
+        if (!ChatManager.Singleton.IsChatFocused)
+        {
+            return;
         }
     }
 

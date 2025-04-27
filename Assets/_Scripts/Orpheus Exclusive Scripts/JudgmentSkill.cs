@@ -61,8 +61,8 @@ public class FafnirSkill : MonoBehaviour
     [SerializeField] private float backoffDistance = 2f;
     [SerializeField] private float backoffSpeed = 7f;
     [SerializeField] private float backoffDuration = 0.3f;
-    [SerializeField] private float sideOffset = 0.7f; // How far to the side to position
-    [SerializeField] private bool approachFromRightSide = true; // Which side to approach from
+    [SerializeField] private float sideOffset = 0.7f;
+    [SerializeField] private bool approachFromRightSide = true;
 
     [Header("Stun Settings")]
     [SerializeField] private float stunDuration = 1.5f;
@@ -76,7 +76,12 @@ public class FafnirSkill : MonoBehaviour
 
     private Vector2 storedMovementInput;
     private bool storedRunState;
+    private Vector2 currentMovementInput;
+    private bool currentRunState;
+    private bool shouldCaptureInput;
+
     private bool storedIsAttackDashing;
+    private bool shouldClearMovement = false;
 
     private float originalOrthoSize;
     private Coroutine zoomRoutine;
@@ -153,7 +158,7 @@ public class FafnirSkill : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         if (isOnCooldown)
         {
@@ -161,9 +166,16 @@ public class FafnirSkill : MonoBehaviour
             isOnCooldown = currentCooldown > 0;
         }
 
+        // Continuously capture input when we're in capture mode
+        if (shouldCaptureInput && playerMovement != null)
+        {
+            currentMovementInput = playerMovement.movementInput;
+            currentRunState = playerMovement.isRunning;
+        }
+
         if (isPunchDashing)
         {
-
+            // Punch dash logic
         }
         else if (isPlayerApproaching && stunnedEnemy != null)
         {
@@ -177,6 +189,11 @@ public class FafnirSkill : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (shouldClearMovement && playerRb != null)
+        {
+            playerRb.linearVelocity = Vector2.zero;
+        }
+
         if (isPunchDashing)
         {
             if (playerRb != null)
@@ -188,8 +205,21 @@ public class FafnirSkill : MonoBehaviour
     }
 
     //-TEST-//
+
+    private void ClearMovementDuringAbility()
+    {
+        if (playerMovement != null)
+        {
+            playerMovement.movementInput = Vector2.zero; // Clear any stored input
+            playerMovement.ForceStopMovement(); // Optional but helps prevent drift
+        }
+    }
+
     private IEnumerator PunchDash()
     {
+        shouldClearMovement = true;
+        ClearMovementDuringAbility();
+
         playerMovement.ClearMovementState();
         isPunchDashing = true;
         punchDashTimer = 0f;
@@ -244,6 +274,8 @@ public class FafnirSkill : MonoBehaviour
         playerMovement.ClearMovementState();
         isPunchDashing = false;
 
+        punchDashDirection = Vector3.zero; // Clear dash direction
+        shouldClearMovement = false;
     }
 
     //----//
@@ -255,25 +287,20 @@ public class FafnirSkill : MonoBehaviour
 
     private void ExecuteFafnir()
     {
+        // Start capturing input continuously
+        shouldCaptureInput = true;
+
+        // Store initial state
+        currentMovementInput = playerMovement.movementInput;
+        currentRunState = playerMovement.isRunning;
+
         playerMovement.ForceStopMovement();
         isOnCooldown = true;
         isPunchConnected = true;
         currentCooldown = cooldownTime;
 
-        storedMovementInput = playerMovement.movementInput;
-        storedRunState = playerMovement.isRunning;
-        storedIsAttackDashing = playerMovement.isAttackDashing;
-
-        playerMovement.movementInput = Vector2.zero;
-        playerMovement.isRunning = false;
-        playerMovement.isAttackDashing = true;
         playerMovement.blockAllInputs = true;
-
-        if (playerMovement != null)
-        {
-            playerMovement.isAttackDashing = true;
-            playerMovement.blockAllInputs = true;
-        }
+        playerMovement.isAttackDashing = true;
 
         if (playerRb != null)
         {
@@ -281,10 +308,7 @@ public class FafnirSkill : MonoBehaviour
         }
 
         UpdateFacingDirection();
-
-        playerAnimator.Play(punchAnimation);
         screenShake?.GenerateImpulse();
-
         StartCoroutine(PunchDash());
 
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
@@ -317,11 +341,13 @@ public class FafnirSkill : MonoBehaviour
     {
         if (!isPunchConnected || stunnedEnemy != null) return;
 
-        ResetCombo();
         if (playerMovement != null)
         {
+            playerMovement.blockAllInputs = false;
             playerMovement.isAttackDashing = false;
         }
+
+        Invoke(nameof(ResetCombo), 0.5f); // Keep delayed cleanup
     }
 
 
@@ -351,17 +377,13 @@ public class FafnirSkill : MonoBehaviour
 
     private void CreateApproachVFX(GameObject vfxPrefab, Vector3 offset, float baseAngle)
     {
-        // Calculate spawn position with offset
         Vector3 spawnPos = stunnedEnemy.transform.position + offset;
 
-        // Adjust angle based on approach side
         float finalAngle = approachFromRightSide ? baseAngle : baseAngle + 180f;
 
-        // Create rotation (flip Y scale if needed to prevent upside-down)
         Quaternion rotation = Quaternion.Euler(0, 0, finalAngle);
         GameObject vfxInstance = Instantiate(vfxPrefab, spawnPos, rotation);
 
-        // Handle flipping if needed (alternative to rotation)
         if (vfxInstance.TryGetComponent<SpriteRenderer>(out var renderer))
         {
             renderer.flipY = !approachFromRightSide;
@@ -391,6 +413,7 @@ public class FafnirSkill : MonoBehaviour
     //-----//
     private void ApproachEnemy()
     {
+        // Still block actual movement during approach
         if (playerMovement != null)
         {
             playerMovement.movementInput = Vector2.zero;
@@ -523,6 +546,14 @@ public class FafnirSkill : MonoBehaviour
 
     private void BackOffFromEnemy()
     {
+        ClearMovementDuringAbility();
+
+        backoffDirection = Vector3.zero;
+        if (playerRb != null)
+        {
+            playerRb.linearVelocity = Vector2.zero;
+        }
+
         if (playerMovement != null)
         {
             playerMovement.movementInput = Vector2.zero;
@@ -535,6 +566,29 @@ public class FafnirSkill : MonoBehaviour
     private void StopBackoff()
     {
         isBackingOff = false;
+
+        approachFromRightSide = true; // Reset to default
+        backoffDirection = Vector3.zero;
+
+        if (playerMovement != null)
+        {
+            playerMovement.blockAllInputs = false;
+            playerMovement.isAttackDashing = false;
+            playerMovement.ForceStopMovement();
+        }
+
+        if (playerRb != null)
+        {
+            playerRb.linearVelocity = Vector2.zero;
+        }
+
+        Invoke(nameof(ResetCombo), 0.1f);
+    }
+
+    private IEnumerator DelayedFullReset()
+    {
+        yield return new WaitForSeconds(0.1f); // Match your existing delay
+        ResetCombo(); // Full cleanup
     }
 
     private void StartZoom(float targetSize, float duration)
@@ -566,7 +620,7 @@ public class FafnirSkill : MonoBehaviour
 
     private void FreezePlayer()
     {
-        isPlayerFrozen = true;
+        isPlayerFrozen = false;
         playerRb.linearVelocity = Vector2.zero;
         playerRb.bodyType = RigidbodyType2D.Kinematic;
     }
@@ -579,6 +633,8 @@ public class FafnirSkill : MonoBehaviour
 
     private void ResetCombo()
     {
+        // Stop capturing input
+        shouldCaptureInput = false;
 
         if (playerRb != null)
         {
@@ -589,8 +645,10 @@ public class FafnirSkill : MonoBehaviour
         {
             playerMovement.isAttackDashing = false;
             playerMovement.blockAllInputs = false;
-            playerMovement.movementInput = storedMovementInput;
-            playerMovement.isRunning = storedRunState;
+
+            // Apply the most recent captured input
+            playerMovement.movementInput = currentMovementInput;
+            playerMovement.isRunning = currentRunState;
             playerMovement.UpdateMovementState();
         }
 

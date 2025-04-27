@@ -130,10 +130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05900d0652fcb9b4ca0bc20e754ae766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  stoppingDistance: 0
-  avoidanceRadius: 0
-  avoidanceForce: 0
+  moveSpeed: 3
+  stoppingDistance: 1
+  avoidanceRadius: 2
+  avoidanceForce: 3
 --- !u!114 &45658763325601189
 MonoBehaviour:
   m_ObjectHideFlags: 0

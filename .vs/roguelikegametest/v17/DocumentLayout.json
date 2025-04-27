@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\_scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|c:\\users\\user 1.2\\documents\\unitygameprojects\\roguelikegametest\\assets\\_scripts\\orpheus exclusive scripts\\judgmentskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\orpheus exclusive scripts\\judgmentskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\enemies\\rangedenemyhitboxscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\enemies\\rangedenemyhitboxscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|c:\\users\\user 1.2\\documents\\unitygameprojects\\roguelikegametest\\assets\\_scripts\\orpheus exclusive scripts\\judgmentstrikescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\orpheus exclusive scripts\\judgmentstrikescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\_scripts\\movementscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\movementscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\_scripts\\damagescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\damagescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\enemies\\rangedenemyhitboxscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\enemies\\rangedenemyhitboxscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\_scripts\\attackscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\enemies\\enemybullethitboxscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\_scripts\\hitboxscriptspecial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\hitboxscriptspecial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\_scripts\\hitflashscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\hitflashscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\hitstopscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\_scripts\\ultimatemodescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\ultimatemodescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\_scripts\\afterimagescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\afterimagescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -65,6 +65,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\assets\\enemies\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1114561-D5D3-093F-8F07-886ED6B5BF53}|Assembly-CSharp.csproj|solutionrelative:assets\\enemies\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\UltimateModeScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\UltimateModeScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\HitboxScriptSpecial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\HitboxScriptSpecial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -79,20 +87,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "JudgmentSkill.cs",
+              "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\Orpheus Exclusive Scripts\\JudgmentSkill.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Orpheus Exclusive Scripts\\JudgmentSkill.cs",
+              "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\Orpheus Exclusive Scripts\\JudgmentSkill.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Orpheus Exclusive Scripts\\JudgmentSkill.cs",
+              "ViewState": "AgIAAJ0BAAAAAAAAAAApwK0BAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T01:44:37.89Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-04-19T13:15:09.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "JudgmentStrikeScript.cs",
+              "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\Orpheus Exclusive Scripts\\JudgmentStrikeScript.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Orpheus Exclusive Scripts\\JudgmentStrikeScript.cs",
+              "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\Orpheus Exclusive Scripts\\JudgmentStrikeScript.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Orpheus Exclusive Scripts\\JudgmentStrikeScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:37:15.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovementScript.cs",
+              "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\MovementScript.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\MovementScript.cs",
+              "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\MovementScript.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\MovementScript.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAK8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T15:52:52.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "RangedEnemyHitboxScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\Enemies\\RangedEnemyHitboxScript.cs",
               "RelativeDocumentMoniker": "Assets\\Enemies\\RangedEnemyHitboxScript.cs",
@@ -104,19 +136,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DamageScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\DamageScript.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\DamageScript.cs",
               "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\DamageScript.cs",
               "RelativeToolTip": "Assets\\_Scripts\\DamageScript.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAowHEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAtwGAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T12:32:15.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "EnemyHitboxScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\Enemies\\EnemyHitboxScript.cs",
               "RelativeDocumentMoniker": "Assets\\Enemies\\EnemyHitboxScript.cs",
@@ -128,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "EnemyDamageScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\Enemies\\EnemyDamageScript.cs",
               "RelativeDocumentMoniker": "Assets\\Enemies\\EnemyDamageScript.cs",
@@ -140,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "HitboxScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\HitboxScript.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\HitboxScript.cs",
@@ -152,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "EnemyBulletHitboxScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\Enemies\\EnemyBulletHitboxScript.cs",
               "RelativeDocumentMoniker": "Assets\\Enemies\\EnemyBulletHitboxScript.cs",
@@ -176,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "UltimateModeScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\UltimateModeScript.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\UltimateModeScript.cs",
@@ -188,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "HitboxScriptSpecial.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\HitboxScriptSpecial.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\HitboxScriptSpecial.cs",
@@ -200,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "HitStopScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\HitStopScript.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\HitStopScript.cs",
@@ -236,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "HitFlashScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\HitFlashScript.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\HitFlashScript.cs",
@@ -248,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AttackScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\AttackScript.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\AttackScript.cs",
@@ -260,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AttackVFXScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegametest\\Assets\\_Scripts\\AttackVFXScript.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\AttackVFXScript.cs",

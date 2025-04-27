@@ -500,7 +500,7 @@ Animator:
   m_GameObject: {fileID: 5180213880757792571}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3ce16582d46cf3e4d9de46e09600044b, type: 2}
+  m_Controller: {fileID: 9100000, guid: ae42479df8403004a9bedbad05775913, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -883,35 +883,35 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5180213880757792571}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8ec7078553274f4baee8b369077be93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockbackStrength: 10
-  normalAttackScript: {fileID: 0}
+  knockbackStrength: 1
+  normalAttackScript: {fileID: 7466066004177975003}
   ultimateAttackScript: {fileID: 0}
-  dashScript: {fileID: 0}
+  dashScript: {fileID: 8591201765963619189}
   postProcessingVolume: {fileID: 1140491722465439095, guid: abd53724ec4cad44fa475f39c384a8df, type: 3}
   playerCamera: {fileID: 0}
   maxUltimateMeter: 100
   meterDrainRate: 10
   activationThreshold: 100
-  ultimateAnimator: {fileID: 9100000, guid: 74e8021b3a2fec24fa3551495538ab8f, type: 2}
+  ultimateAnimator: {fileID: 9100000, guid: 3ce16582d46cf3e4d9de46e09600044b, type: 2}
   dashCooldownReducer: 1.5
   smokeEffect: {fileID: 3846252559432703443, guid: 3661773dbfdb48742afef6136f026b71, type: 3}
   weakerExplosionEffect: {fileID: 8665005863144061246, guid: c2763fddbf77b7a45b0e7b68794a6739, type: 3}
   extraExplosionEffect: {fileID: 1214133531027874679, guid: 196dda2647bbb024baee0ff6881bb30d, type: 3}
   darkenScreenEffect: {fileID: 4757332818873620444, guid: f4b7e531ec7f7ea46be3f18025d86b4f, type: 3}
   explosionEffect: {fileID: 757292360690134742, guid: f5eec3855360a2e4f8e1924738851c12, type: 3}
-  explosionRadius: 50
-  explosionForce: 100
+  explosionRadius: 30
+  explosionForce: 5
   explosionDamage: 20
   explosionShakeIntensity: 9
   explosionShakeDuration: 0.1
   explosionShakeDelay: 0.68
   explosionSmokeDelay: 0.2
-  cinemachineCamera: {fileID: 0}
+  cinemachineCamera: {fileID: 2648452647264720797}
   zoomInSize: 5
   zoomOutSize: 6.6
   zoomInDuration: 0.3
@@ -1037,7 +1037,7 @@ MonoBehaviour:
   explosionKnockback: 0
   approachSpeed: 30
   stoppingDistance: 1
-  freezePlayerDuration: 5
+  freezePlayerDuration: 1
   backoffDistance: 3
   backoffSpeed: 20
   backoffDuration: 0.1
