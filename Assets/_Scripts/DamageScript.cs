@@ -94,9 +94,10 @@ public class DamageScript : MonoBehaviour
             isInvincible = true;
             flashEffect.Flash();
 
+            /*
             hp -= damage;
             hpSlider1.value = hp;
-            /*
+            
             hpSlider2.value = hp;
             hpValue.text = $"{hp.ToString()} / {maxHP.ToString()}";
             */
