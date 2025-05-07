@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Library\\PackageCache\\com.unity.netcode.gameobjects@f2477a6c90fe\\Runtime\\Configuration\\NetworkPrefabs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.netcode.gameobjects@f2477a6c90fe\\Runtime\\Configuration\\NetworkPrefabs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|c:\\users\\user 1.2\\documents\\unitygameprojects\\roguelikegame\\assets\\_scripts\\chatfunctionscripts\\chatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\chatfunctionscripts\\chatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\user 1.2\\documents\\unitygameprojects\\roguelikegame\\assets\\enemies\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\enemies\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|c:\\users\\user 1.2\\documents\\unitygameprojects\\roguelikegame\\assets\\_scripts\\chatfunctionscripts\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\chatfunctionscripts\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|c:\\users\\user 1.2\\documents\\unitygameprojects\\roguelikegame\\assets\\_scripts\\chatfunctionscripts\\multiplayerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\chatfunctionscripts\\multiplayerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|c:\\users\\user 1.2\\documents\\unitygameprojects\\roguelikegame\\assets\\_scripts\\chatfunctionscripts\\force.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\chatfunctionscripts\\force.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|c:\\users\\user 1.2\\documents\\unitygameprojects\\roguelikegame\\assets\\_scripts\\chatfunctionscripts\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\chatfunctionscripts\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\assets\\_scripts\\movementscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A454CEFA-E677-29E2-C52B-D7EF053B2D4A}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\movementscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\user 1.2\\documents\\unitygameprojects\\roguelikegame\\assets\\enemies\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\enemies\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,36 +38,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NetworkPrefabs.cs",
-              "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Library\\PackageCache\\com.unity.netcode.gameobjects@f2477a6c90fe\\Runtime\\Configuration\\NetworkPrefabs.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.netcode.gameobjects@f2477a6c90fe\\Runtime\\Configuration\\NetworkPrefabs.cs",
-              "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Library\\PackageCache\\com.unity.netcode.gameobjects@f2477a6c90fe\\Runtime\\Configuration\\NetworkPrefabs.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.netcode.gameobjects@f2477a6c90fe\\Runtime\\Configuration\\NetworkPrefabs.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAwwFsAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MultiplayerUI.cs",
+              "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\ChatFunctionScripts\\MultiplayerUI.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\ChatFunctionScripts\\MultiplayerUI.cs",
+              "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\ChatFunctionScripts\\MultiplayerUI.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\ChatFunctionScripts\\MultiplayerUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:20:21.199Z",
+              "WhenOpened": "2025-04-27T21:03:05.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Force.cs",
+              "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\ChatFunctionScripts\\Force.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\ChatFunctionScripts\\Force.cs",
+              "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\ChatFunctionScripts\\Force.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\ChatFunctionScripts\\Force.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:02:16.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerData.cs",
+              "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\ChatFunctionScripts\\PlayerData.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\ChatFunctionScripts\\PlayerData.cs",
+              "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\ChatFunctionScripts\\PlayerData.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\ChatFunctionScripts\\PlayerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:02:09.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\ChatFunctionScripts\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\ChatFunctionScripts\\ChatMessage.cs",
+              "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\ChatFunctionScripts\\ChatMessage.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\ChatFunctionScripts\\ChatMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T21:01:54.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatManager.cs",
+              "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\ChatFunctionScripts\\ChatManager.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\ChatFunctionScripts\\ChatManager.cs",
+              "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\ChatFunctionScripts\\ChatManager.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\ChatFunctionScripts\\ChatManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T20:58:20.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MovementScript.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\MovementScript.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\MovementScript.cs",
               "ToolTip": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\_Scripts\\MovementScript.cs",
               "RelativeToolTip": "Assets\\_Scripts\\MovementScript.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwGcAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAYwHcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T20:16:09.128Z"
+              "WhenOpened": "2025-04-27T20:16:09.128Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Spawner.cs",
               "DocumentMoniker": "C:\\Users\\User 1.2\\Documents\\UNITYGAMEPROJECTS\\roguelikegame\\Assets\\Enemies\\Spawner.cs",
               "RelativeDocumentMoniker": "Assets\\Enemies\\Spawner.cs",
