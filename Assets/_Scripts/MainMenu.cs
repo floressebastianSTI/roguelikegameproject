@@ -71,21 +71,21 @@ public class MainMenu : MonoBehaviour
 
     private void OnSingleplayerClick()
     {
-        Debug.Log("Attempting to load SingleplayerMode...");
+        Debug.Log("Attempting to load CharPicking...");
         try
         {
-            if (Application.CanStreamedLevelBeLoaded("SingleplayerMode"))
+            if (Application.CanStreamedLevelBeLoaded("CharPicking"))
             {
-                SceneManager.LoadScene("SingleplayerMode");
+                SceneManager.LoadScene("CharPicking");
             }
             else
             {
-                Debug.LogError("SingleplayerMode is not in Build Settings!");
+                Debug.LogError("CharPicking is not in Build Settings!");
             }
         }
         catch (System.Exception e)
         {
-            Debug.LogError($"Failed to load SingleplayerMode: {e.Message}");
+            Debug.LogError($"Failed to load CharPicking: {e.Message}");
         }
     }
 
