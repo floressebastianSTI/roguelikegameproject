@@ -1,4 +1,4 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
@@ -15,7 +15,7 @@ public class MultiplayerUI : MonoBehaviour
 
     void AssignInputs()
     {
-        hostBtn.onClick.AddListener( delegate { NetworkManager.Singleton.StartHost(); } );
-        joinBtn.onClick.AddListener( delegate { NetworkManager.Singleton.StartClient(); } );
+        hostBtn.onClick.AddListener(delegate { NetworkManager.Singleton.StartHost(); });
+        joinBtn.onClick.AddListener(delegate { NetworkManager.Singleton.StartClient(); });
     }
 }
